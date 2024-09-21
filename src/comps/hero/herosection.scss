@@ -37,7 +37,6 @@
         }
     }
 
-    // Custom Navigation Buttons
     .custom-nav-buttons {
         .swiper-button-prev, .swiper-button-next {
             position: absolute;
@@ -45,9 +44,9 @@
             transform: translateY(-50%);
             z-index: 10;
             cursor: pointer;
-            color: white;
-            font-size: 30px;
-            padding: 10px;
+            color: white; // Ensure the icons are visible
+            font-size: 30px; // Increase size if necessary
+            padding: 10px; // Add padding for click area
         }
         .swiper-button-prev {
             left: 10px;
