@@ -6,7 +6,7 @@ import ReactPlayer from "react-player";
 const VideoSec = (props) => {
   return (
     <>
-      <div className="wrapper VideoSec">
+      <div className="parent VideoSec">
         <div className="container VideoSec-container">
           <div className="left">
             <div className="video">
@@ -27,6 +27,8 @@ const VideoSec = (props) => {
         playsinline
         playing={true}
         url={props.videoSource}
+        width="100%"
+        height='100%'
         className="videoLaptop"
       />
             </div>
