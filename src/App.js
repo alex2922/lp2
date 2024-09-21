@@ -12,8 +12,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Header/>
-        <About_sec />
+      {/* <Header/> */}
         {/* <Footer /> */}
         <Routes>
           <Route path="/" element={<Home />} />
