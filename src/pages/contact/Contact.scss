@@ -1,5 +1,6 @@
 .contact-parent {
   padding: calc(var(--unit) * 3) 0px;
+  background: var(--grey);
   .contact-container {
     display: flex;
     gap: calc(var(--unit));
@@ -11,31 +12,37 @@
       gap: var(--unit);
       flex-wrap: wrap;
       width: 100%;
-    
+
       .contact-card {
         box-shadow: var(--shadow);
         padding: calc(var(--unit)) var(--unit);
         border-radius: calc(var(--unit) / 2);
         width: 100%;
         flex-grow: 1;
+        position: relative;
         display: flex;
         flex-direction: column;
-        gap: calc(var(--unit) / 2);
+        // gap: calc(var(--unit) / 3);
+        background: var(--white);
+        // border: 1px solid red;
         .contact-card-box {
           display: flex;
-          align-items: flex-start;
+          align-items: center;
           justify-content: flex-start;
           gap: calc(var(--unit) / 2);
-        //   border: 1px solid red;
+
           padding: 5px;
           span {
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--accent-yellow);
+            background: var(--accent-blue);
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
           }
-          .contact-info 
-          {
+          .contact-info {
             // border: 1px solid red;
             padding: 0px !important;
             line-height: 100%;
@@ -47,9 +54,66 @@
 
         .custom-heading {
           font-size: calc(var(--unit));
-          font-weight: 500;
-          color: var(--accent-yellow);
+          font-weight: 700;
+          color: var(--accent-blue);
         }
+
+        .flag-box {
+          border: 1px solid var(--accent-yellow);
+          height: fit-content;
+          width: fit-content;
+          position: absolute;
+          right: 5px;
+          top: 5px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          // gap: calc(var(--unit) / 2.5);
+          padding: 5px;
+          cursor: pointer;
+          transition: var(--trans);
+        
+          .flag-content {
+            max-width: 0; // Start with 0 width
+            overflow: hidden;
+            white-space: nowrap; // Prevent text wrapping
+            transition: max-width 0.5s ease; // Add smooth transition for width
+            opacity: 0; // Start with hidden text
+            transition: opacity 0.3s ease, max-width 0.5s ease; // Add opacity transition
+          }
+        
+          .flag {
+          
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+
+            &.india 
+            {
+              background: url("../../assets/flags/flag.jpg");
+             
+            }
+            &.uk 
+            {
+              background: url("../../assets/flags/uk_flag.webp");
+            }
+            &.dubai 
+            {
+              background: url("../../assets/flags/uae_flag.webp");
+              background-position: left center !important;
+            }
+          }
+        
+          &:hover {
+            gap: calc(var(--unit) / 2.5);
+            .flag-content {
+              max-width: 100px; 
+              opacity: 1; 
+            
+            }
+          }
+        }
+        
       }
     }
   }
@@ -58,5 +122,10 @@
 @media (max-width: 800px) {
   .contact-container {
     flex-direction: column-reverse !important;
+  }
+}
+@media (max-width: 430px) {
+  .flag-box{
+   margin-bottom: 3px;
   }
 }
