@@ -3,6 +3,7 @@
   --accent-yellow: #f1b821;
   --black: #000;
   --white: #fff;
+  --grey:#f0f0f0;
   --unit: 20px;
   --trans: all 0.33s ease-in-out;
   --trans-q: all 0.15s ease-in-out;
@@ -204,4 +205,12 @@ body {
   background-position: center center !important;
   background-repeat: no-repeat !important;
   background-size:contain !important;
+}
+
+
+.link{
+  line-height: 24px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: 16px;
 }
