@@ -1,92 +1,9 @@
-.aboutsec-parent {
-  padding: 100px 0px 50px 0px;
+.aboutsec {
   min-height: 300px;
+  padding: 100px 0px 50px 0px;
+  // background: red;
+
   .aboutsec-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: calc(var(--unit) / 2);
-    box-shadow: var(--shadow);
-    border-radius: calc(var(--unit) / 2);
-    padding: 40px 0px;
-    .about-left {
-      width: 30%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      height: 100%;
-      background: red;
-
-      .mob-img {
-        aspect-ratio: 447/920;
-        width:  220px;
-        background: url("../../assets/Homepage/axonic\ mobile\ png.png");
-        border-radius: 5px;
-        position: absolute;
-        bottom: -30px;
-        // right: 50%;
-      }
-    }
-    .about-right {
-      width: 70%;
-      display:flex;
-      flex-direction: column;
-      gap:calc(var(--unit) /2);
-      transition: var(--trans);
-      padding: 0px calc(var(--unit) * 2) 0px 0px;
-      .desc {
-        text-align: justify;
-      }
-    }
-  }
-}
-@media only screen and (max-width:1200px){
-    .aboutsec-parent{
-        .aboutsec-container{
-            margin:0px 10px;
-        }
-    }
-}
-@media only screen and (max-width:800px){
-    .aboutsec-parent{
-        height:800px;
-        
-        .aboutsec-container{
-            flex-direction: column;
-            .about-left{
-
-            }
-            .about-right{
-                width:100%;
-                align-items: center;
-                justify-content: center;
-                padding-bottom:20px;
-                .desc{
-                    text-align: center;
-                }
-            }
-        }
-    }
-}
-@media only screen and (max-width:500px){
-    .aboutsec-parent{
-        height:900px;
-    }
-}
-
-
-
-
-
-.aboutsec{
-  min-height: 300px;
-  padding: 100px 0px 50px 0px;
-
-
-  .aboutsec-container{
-
-    margin: 0px 20px;
     box-shadow: var(--shadow);
     background: var(--white);
     display: flex;
@@ -94,10 +11,70 @@
     justify-content: center;
     gap: calc(var(--unit) / 2);
     box-shadow: var(--shadow);
+    border-radius: calc(var(--unit) / 2);
+    padding: 30px 0px;
 
+    .left {
+      width: 30%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: calc(var(--unit) / 2);
+      position: relative;
+      // background: red;
+
+      .mob-img {
+        background: url("../../assets/Homepage/axonic\ mobile\ png.png");
+        width: 220px;
+        aspect-ratio: 447/920;
+        position: absolute;
+        bottom: 0px;
+      }
+    }
+
+    .right {
+      width: 70%;
+      height: 100%;
+      padding: 0px 20px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      gap: calc(var(--unit) / 2);
+    }
   }
+}
 
+@media only screen and (max-width: 1200px) {
+  .aboutsec {
+    padding: 100px 20px 50px 20px;
+  }
+}
 
+@media only screen and (max-width: 900px) {
+  .aboutsec {
+    padding: 200px 20px 50px 20px;
+  }
+  .aboutsec-container {
 
+    flex-direction: column;
+    .left{
+      width: 100% !important;
+      
+    }
 
+    .right{
+      width: 100% !important;
+      align-items: center !important;
+
+      h2{
+        margin-top: 20px;
+      }
+      p{
+        text-align: center;
+      }
+    }
+    
+  }
 }

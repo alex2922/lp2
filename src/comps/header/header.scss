@@ -20,7 +20,7 @@
     .menu-icon {
       color: white;
       cursor: pointer;
-      padding-right:10px;
+      padding-right: 10px;
       transition: var(--trans);
       display: flex;
       align-items: center;
@@ -55,8 +55,8 @@
           font-size: 30px;
         }
         &:hover {
-            transform: scale(1.2) rotate(15deg);
-          }
+          transform: scale(1.2) rotate(15deg);
+        }
       }
       .menu-links {
         height: 100%;
@@ -64,93 +64,101 @@
         right: 0;
         position: absolute;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         background: var(--accent-blue);
         padding: var(--unit);
         padding-top: calc(var(--unit) * 2);
         transition: var(--trans);
-        justify-content: center;
+        justify-content: space-between;
         gap: calc(var(--unit) * 2);
-        a {
-          color: white;
-          transition: var(--trans);
-
-          &:hover {
-            color: var(--accent-yellow);
-          }
-        }
-        ul {
+        .top {
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          flex-direction: column;
+          padding-top: 50px;
+          gap: var(--unit);
           a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            color: white;
             transition: var(--trans);
+
+            &:hover {
+              color: var(--accent-yellow);
+            }
           }
-          .menudropdown {
-            display: flex;
-            background: var(--accent-blue);
-            border: 1px solid rgba(138, 135, 135, 0.192);
-            flex-direction: column;
-            gap: 20px;
-            align-items: center;
-            justify-content: center;
-            padding: 20px 0px;
-            border-radius: calc(var(--unit) / 2);
-            width: 300px;
-            transition: var(--trans);
+          ul {
+            a {
+              display: flex;
+              align-items: flex-start;
+              justify-content: flex-start;
+              transition: var(--trans);
+            }
+            .menudropdown {
+              display: flex;
+              margin-top:10px;
+              flex-direction: column;
+              gap: 20px;
+              align-items: flex-start;
+              justify-content: center;
+              border-radius: calc(var(--unit) / 2);
+              width: 300px;
+              transition: var(--trans);
+              background: hsla(0, 0%, 100%, .107);
+              padding: 15px 10px;
+              border-radius: 5px;
+            }
           }
         }
       }
 
-      .clickarea{
-height: 100%;
-width: 100%;
-// background: rosybrown;
+      .clickarea {
+        height: 100%;
+        width: 100%;
+        // background: rosybrown;
       }
-
-
-
     }
-    .mobile-number {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      gap: 10px;
-      transition: var(--trans);
-
-      .contact {
-        border-radius: 5px;
+    .bottom {
+      .mobile-number {
         display: flex;
         align-items: center;
-        padding: 10px;
-        border: 1px solid rgba(255, 255, 255, 0.174);
-        gap: calc(var(--unit) / 2);
-        width: 100%;
-        color: var(--white);
+        flex-direction: column;
+        gap: 10px;
         transition: var(--trans);
-        cursor: pointer;
 
-        .icon {
+        .contact {
+          border-radius: 5px;
           display: flex;
           align-items: center;
-          justify-content: center;
-          color: var(--accent-yellow);
+          padding: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.174);
+          gap: calc(var(--unit) / 2);
+          width: 100%;
+          color: var(--white);
           transition: var(--trans);
-        }
+          cursor: pointer;
 
-        p {
-          font-size: 14px;
-          line-height: 18px;
-          transition: var(--trans);
-        }
+          .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-yellow);
+            transition: var(--trans);
+          }
 
-        &:hover {
-          background: var(--accent-yellow);
-
-          .icon,
           p {
-            color: var(--accent-blue);
+            font-size: 14px;
+            line-height: 18px;
+            transition: var(--trans);
+          }
+
+          &:hover {
+            background: var(--accent-yellow);
+
+            .icon,
+            p {
+              color: var(--accent-blue);
+            }
           }
         }
       }
