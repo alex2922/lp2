@@ -1,37 +1,37 @@
 .about-parent {
-  margin-top: 20px;
+  padding: 50px 0px;
   height: 500px;
   .about-container {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: calc(var(--unit) / 2);
     box-shadow: var(--shadow);
+    border-radius: calc(var(--unit) / 2);
     .about-left {
-      width: 50%;
+      width: 30%;
       display: flex;
       align-items: center;
       justify-content: center;
-      background: yellow;
+
       position: relative;
-      top: 0;
-      left: 0;
       height: 100%;
 
       .mob-img {
-        width: 250px;
+        aspect-ratio: 447/920;
         height: 100%;
-        background: url("https://img.freepik.com/free-photo/smartphone-nature-concept_23-2150246099.jpg?t=st=1727073722~exp=1727077322~hmac=302dfb4bed5c94145bc7aae23f98e8ea2345978b61ba27b0bd6ad739b016abb7&w=740");
-        border-radius: 10px;
+        background: url("../../assets/Homepage/axonic\ mobile\ png.png");
+        border-radius: 5px;
         position: absolute;
-        top: -20px;
-        right: 0;
+        top: -30px;
+        // right: 50%;
       }
     }
     .about-right {
-      width: 50%;
-      background: red;
+      width: 70%;
+      .desc {
+        text-align: justify;
+      }
     }
   }
 }

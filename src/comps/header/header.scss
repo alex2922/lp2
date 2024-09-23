@@ -1,0 +1,16 @@
+.header-parent{
+    height:70px;
+    position: absolute;
+    top:20px;
+    border:1px solid red;
+    
+
+    .header-container{
+       
+        .logo{
+            background:red;
+            height:60px;
+            width:150px;
+        }
+    }
+}
