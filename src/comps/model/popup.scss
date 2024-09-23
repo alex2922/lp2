@@ -3,7 +3,7 @@
   height: 100svh;
   background: rgba(70, 61, 61, 0.363);
   position: fixed;
-  z-index: 100;
+  z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
     justify-content: center;
     position: relative;
     flex-direction: column;
-    border-radius: calc(var(--unit) / 2);
+    border-radius: calc(var(--unit) / 1.7);
     gap: calc(var(--unit));
     padding: calc(var(--unit) * 2) var(--unit);
     .exit-button {
@@ -58,6 +58,7 @@
         border-radius: calc(var(--unit) / 4);
         background: url("../../assets/model3.webp");
         background-position: top center !important;
+        margin-bottom: 10px;
    
       }
 
@@ -88,6 +89,7 @@
       .second-screen-heading 
       {
         text-align: center;
+        font-weight: 600;
       }
     }
   }
