@@ -36,17 +36,17 @@ const PopUp = ({ close }) => {
           <div ref={screen1Ref} className="pop-up-screen1">
             <div className="image-box bg-img-cover"></div>
             <div className="popup-content">
-              <h2 className="popup-header">Enroll before you scroll!</h2>
+              <h2 className="popup-header">Enroll before<br/> you scroll!</h2>
               <p>Join AxonCare and take control of your health.</p>
               <Button text="Get Started" onClick={() => setToggle(false)} />
             </div>
           </div>
         ) : (
           <div ref={screen2Ref} className="pop-up-screen2">
-            <p className="second-screen-heading">
-              Fill the form and we will bring the best of healthcare to you
+            <h3 className="second-screen-heading">
+              Fill the form & we'll bring the best of healthcare to you
               at the earliest.
-            </p>
+            </h3>
             <ContactForm reusing={true} close={close}/>
           </div>
         )}
