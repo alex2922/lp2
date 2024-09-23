@@ -34,7 +34,7 @@ function Contact() {
                 <p>+1 408 693 6337​</p>
               </div>
             </a>
-            <a href="https://maps.app.goo.gl/wUvDhkbhLCnKCk4TA" className="contact-card-box">
+            <a href="https://maps.app.goo.gl/wUvDhkbhLCnKCk4TA" className="contact-card-box" target="__blank">
               <span>
                 <IoLocationOutline />
               </span>{" "}
@@ -45,7 +45,7 @@ function Contact() {
                 <p>505 Cento Ct, Pleasanton, CA 94566​</p>
               </div>
             </a>
-            <a href="https://maps.app.goo.gl/CVWvUKyAZnHMcXpX6" className="contact-card-box">
+            <a href="https://maps.app.goo.gl/CVWvUKyAZnHMcXpX6" className="contact-card-box" target="__blank">
               <span>
                 <IoLocationOutline />
               </span>{" "}
@@ -71,7 +71,7 @@ function Contact() {
                 <p>+1 408 693 6337​</p>
               </div>
             </a>
-            <a href="https://maps.app.goo.gl/haYyLsWvNbWU5eoE7" className="contact-card-box">
+            <a href="https://maps.app.goo.gl/haYyLsWvNbWU5eoE7" className="contact-card-box" target="__blank">
               <span>
                 <IoLocationOutline />
               </span>{" "}
@@ -100,7 +100,7 @@ function Contact() {
               <span>
                 <IoLocationOutline />
               </span>{" "}
-              <a href="https://maps.app.goo.gl/aScSECScUZRB3GLL7" className="contact-info">
+              <a href="https://maps.app.goo.gl/aScSECScUZRB3GLL7" className="contact-info" target="__blank">
                 <div className="heading custom-heading">
                   Development Centre Pune :{" "}
                 </div>
