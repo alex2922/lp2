@@ -1,5 +1,5 @@
 import React from "react";
-import "./contact.scss";
+import "./Contact.scss";
 import ContactForm from "../../comps/contactcomp/ContactForm";
 import { MdOutlineMail } from "react-icons/md";
 function Contact() {

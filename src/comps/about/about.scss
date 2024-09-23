@@ -38,3 +38,36 @@
     }
   }
 }
+@media only screen and (max-width:1200px){
+    .aboutsec-parent{
+        .aboutsec-container{
+            margin:0px 10px;
+        }
+    }
+}
+@media only screen and (max-width:800px){
+    .aboutsec-parent{
+        height:800px;
+        
+        .aboutsec-container{
+            flex-direction: column;
+            .about-left{
+
+            }
+            .about-right{
+                width:100%;
+                align-items: center;
+                justify-content: center;
+                padding-bottom:20px;
+                .desc{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .aboutsec-parent{
+        height:900px;
+    }
+}
