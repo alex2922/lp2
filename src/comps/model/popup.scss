@@ -106,3 +106,17 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+
+@media (max-width: 500px) 
+{
+  .exit-button 
+  {
+    margin-bottom: 10px !important;
+  }
+
+  .second-screen-heading 
+  {
+    padding: 10px 0px;
+  }
+}
