@@ -67,7 +67,7 @@ function About() {
             data-aos-delay="300"
           ></div>
           <div className="about-right" data-aos="fade-up" data-aos-delay="300">
-            <h2>Revolutionising the way we deliver healthcare</h2>
+            <h2>Revolutionising The Way We Deliver Healthcare</h2>
             <p>
               AxonCare, a service brand by Axonic, is a global healthcare
               network connecting doctors and patients worldwide through
@@ -79,7 +79,7 @@ function About() {
               of a healthcare ecosystem that transcends barriers of language and
               distance, receiving care in your preferred way.
             </p>
-            <Button className="button-about" text="Book Now" />
+            <Button className="button-about" href="/contact" text="Book Now" />
           </div>
         </div>
       </div>
@@ -138,7 +138,7 @@ function About() {
                 <p className="link">Coordinated Care</p>
               </div>
             </div>
-            <Button text="Book Now" />
+            <Button href="/contact"  text="Book Now" />
           </div>
         </div>
       </div>
@@ -238,7 +238,7 @@ function About() {
                   and book your appointment online.
                 </p>
               </div>
-              <Button text="Book Now" />
+              <Button text="Book Now" href="/contact" />
             </div>
           </div>
         </div>
@@ -266,7 +266,7 @@ function About() {
                   qualified expert.
                 </p>
               </div>
-              <Button text="Book Now" />
+              <Button text="Book Now" href="/contact" />
             </div>
           </div>
         </div>
