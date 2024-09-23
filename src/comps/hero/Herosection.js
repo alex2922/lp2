@@ -20,7 +20,7 @@ function Herosection() {
                 <Swiper
                     spaceBetween={0}
                     centeredSlides={true}
-                    pauseOnMouseEnter= {true}
+                    pauseOnMouseEnter={true}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
@@ -35,7 +35,7 @@ function Herosection() {
                         swiper.navigation.init();
                         swiper.navigation.update();
                     }}
-                    
+
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
                 >
@@ -56,19 +56,22 @@ function Herosection() {
                         <div className="slide slide-img2 bg-img-cover">
                             <div className="overlay"></div>
                             <div className="slide-text-container container">
-                                <h1 className='slide-heading'>Anytime, Anywhere, In Any Language</h1>
+                                <h1 className='slide-heading'>Care  Anytime,  Anywhere, In Any Language 
+                                </h1>
                                 <Button text=" Consult Now"
+                                    href="/contact"
                                 />
                             </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide
+                    >
                         <div className="slide slide-img3 bg-img-cover">
                             <div className="overlay"></div>
                             <div className="slide-text-container container">
                                 <h1 className='slide-heading'>Healthcare Is More Accessible Than Ever With Us</h1>
                                 <Button text=" Join AxonCare"
-
+                                    href="/contact"
                                 />
                             </div>
                         </div>
@@ -86,7 +89,7 @@ function Herosection() {
                 </div>
             </div>
 
-           <BelowHero/>
+            <BelowHero />
         </>
     );
 }
