@@ -21,6 +21,9 @@ const FourCard = (props) => {
     <>
       <div className="card-section-parent parent">
         <div className="heading-container container">
+          <span className="section-indicator">
+            {props.heading}
+          </span>
           <h2>What we offer</h2>
         </div>
 

@@ -5,7 +5,7 @@ import Partners from "../../comps/partners/Partners";
 import FourCard from "../../comps/fourCard/FourCard";
 // import Herosection from "../../comps/hero/Herosection";
 import doctorVideo from "../../assets/videos/doctor_video.webm"
-import doctorVideo from "../../assets/videos/doctor_video.webm";
+
 import Herosection from "../../comps/hero/Herosection";
 // icons
 import optpmetrist from "../../assets/icons/optometrist.gif";
@@ -82,7 +82,7 @@ function Home() {
         btn_text="Book Appointment"
         videoSource={patientvideo}
       />
-      <FourCard cardData={cardData} />
+      <FourCard cardData={cardData} heading="For Patients" />
       <Videosec
         heading="For Doctors "
         highlight=" With AxonCare, Make The Whole World Your OPD "
@@ -90,7 +90,7 @@ function Home() {
         btn_text=" Join the AxonCare Network "
         videoSource={doctorVideo}
       />
-      <FourCard cardData={cardData2} />
+      <FourCard cardData={cardData2} heading="For Doctors" />
       <Partners />
     </div>
   );
