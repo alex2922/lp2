@@ -47,7 +47,7 @@ const PopUp = ({ close }) => {
               Fill the form and we will bring the best of healthcare to you
               at the earliest.
             </p>
-            <ContactForm reusing={true} />
+            <ContactForm reusing={true} close={close}/>
           </div>
         )}
       </div>
