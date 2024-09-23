@@ -1,5 +1,5 @@
 .about-parent {
-    margin: 50px 0px;
+    // margin: 50px 0px;
 
     &.about-parent2 {
         background: #f4f4f4;
@@ -16,13 +16,11 @@
 
 
 
+
         .about-left {
             width: 50%;
             height: auto;
             background: var(--accent-yellow);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: cover;
             border-radius: calc(var(--unit)/2);
         }
 
@@ -71,6 +69,7 @@
 
 // second section
 .card-parent {
+    
 
     .card-container {
         height: 100%;
@@ -79,6 +78,7 @@
         align-items: center;
         gap: var(--unit);
         padding: calc(var(--unit)*3) 0px;
+       
 
 
         .card {
@@ -101,7 +101,6 @@
                 align-items: center;
                 gap: var(--unit);
                 position: relative;
-
                 transition: var(--trans);
 
                 .image {
@@ -154,20 +153,25 @@
 
 .dr-parent {
 
-    &.sectionbreak{
+    &.sectionbreak {
         background-color: #f4f4f4;
         padding: calc(var(--unit)*3) 0px;
     }
-    .dr-parent2{
-        background-color: red;
-            }
-    
+
+    &.dr-parent2 {
+        padding: calc(var(--unit)*3) 0px;
+    }
+
     .dr-container {
         display: flex;
         align-items: stretch;
         justify-content: center;
         box-shadow: var(--shadow);
         padding: 0px !important;
+        border-radius: calc(var(--unit)/2);
+        border-radius: 10px 10px 10px 10px;
+
+
 
         .left-img {
             width: 50%;
@@ -177,10 +181,12 @@
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            border-radius: 10px 0px 0px 10px;
+
             &.left-img-2 {
                 // background: url("../../assets/image/Second_Opinion.webp");
-            background: var(--accent-yellow);
-
+                background: var(--accent-yellow);
+                border-radius: 0px 10px 10px 0px;
                 background-position: center center;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -214,7 +220,9 @@
 
     & .bottom {
         flex-direction: row-reverse;
-        
+        border-radius: calc(var(--unit)/2);
+
+
     }
-  
+
 }

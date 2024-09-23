@@ -12,20 +12,19 @@
     .footer-top {
       display: flex;
       justify-content: space-between;
-      gap: calc(var(--unit) / 2);
       .footer-box {
         height: 100%;
         color: var(--white);
         display: flex;
         flex-direction: column;
         gap: calc(var(--unit));
-        padding: 10px;
+        padding: calc(var(--unit));
         h2 {
           color: var(--accent-yellow);
         }
         .footer-logo-box {
           .footer-logo {
-            height: 60px;
+            height: calc(var(--unit) * 3);
           }
         }
       }
@@ -73,4 +72,20 @@
       border-top: 1px solid var(--white);
     }
   }
+}
+
+
+
+@media (max-width:1050px) 
+{
+    .footer-top 
+    {
+        flex-direction: column !important;
+        align-items: center !important;
+
+        .footer-box 
+        {
+            width: 100% !important;
+        }
+    }
 }
