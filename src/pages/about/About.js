@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./About.scss";
 import { FaRegCheckCircle } from "react-icons/fa";
 import lifeIcon from "../../assets/icons/life.gif";
@@ -7,6 +7,9 @@ import emotinalIcon from "../../assets/icons/emotional-intelligence.gif";
 import physIcon from "../../assets/icons/phys.gif";
 import Button from "../../comps/button/Button";
 import { MdAccessTime } from "react-icons/md";
+import Pagetop from "../../comps/pagetop/Pagetop";
+import Aos from "aos";
+import "aos/dist/aos.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -20,6 +23,10 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 function About() {
+  useEffect(function () {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   const doctorData = [
     {
       image: physIcon,
@@ -50,10 +57,16 @@ function About() {
     <>
       {/* First section start */}
 
+      <Pagetop text="About AxonCare" />
+
       <div className="parent about-parent">
         <div className="container about-container">
-          <div className="about-left bg-img-cover"></div>
-          <div className="about-right">
+          <div
+            className="about-left bg-img-cover"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          ></div>
+          <div className="about-right" data-aos="fade-up" data-aos-delay="300">
             <h2>Revolutionising the way we deliver healthcare</h2>
             <p>
               AxonCare, a service brand by Axonic, is a global healthcare
@@ -73,8 +86,12 @@ function About() {
 
       <div className="parent about-parent about-parent2">
         <div className="container about-container about-container2">
-          <div className="about-left bg-img-cover"></div>
-          <div className="about-right">
+          <div
+            className="about-left  about-left-2 bg-img-cover"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          ></div>
+          <div className="about-right" data-aos="fade-up" data-aos-delay="300">
             <h2>AxonCare : Multispeciality Smart Clinic</h2>
             <p>
               Imagine healthcare like never before, with world-class facilities
@@ -85,75 +102,41 @@ function About() {
               healthcare expertise just a tap away.
             </p>
             <div className="icon-main-box">
-            <div className="icon-box">
-              <span className="core-icon">
-                <FaRegCheckCircle />
-              </span>
-              <p className="list-p">
-                <span
-                  className="left-p-span
-                          "
-                >
-                 <Link > Global Access</Link>
+              <div className="icon-box">
+                <span className="core-icon">
+                  <FaRegCheckCircle />
                 </span>
-              </p>
-            </div>
+                <p className="link"> Global Access</p>
+              </div>
 
-            <div className="icon-box">
-              <span className="core-icon">
-                <FaRegCheckCircle />
-              </span>
-              <p className="list-p">
-                <span
-                  className="left-p-span
-                          "
-                >
-                  Multilingual Support
+              <div className="icon-box">
+                <span className="core-icon">
+                  <FaRegCheckCircle />
                 </span>
-              </p>
-            </div>
+                <p className="link"> Multilingual Support</p>
+              </div>
 
-            <div className="icon-box">
-              <span className="core-icon">
-                <FaRegCheckCircle />
-              </span>
-              <p className="list-p">
-                <span
-                  className="left-p-span
-                          "
-                >
-                  Save Time and Money
+              <div className="icon-box">
+                <span className="core-icon">
+                  <FaRegCheckCircle />
                 </span>
-              </p>
-            </div>
+                <p className="link"> Save Time and Money</p>
+              </div>
 
-            <div className="icon-box">
-              <span className="core-icon">
-                <FaRegCheckCircle />
-              </span>
-              <p className="list-p">
-                <span
-                  className="left-p-span
-                          "
-                >
-                  Seamless Communication
+              <div className="icon-box">
+                <span className="core-icon">
+                  <FaRegCheckCircle />
                 </span>
-              </p>
-            </div>
+                <p className="link"> Seamless Communication</p>
+              </div>
 
-            <div className="icon-box">
-              <span className="core-icon">
-                <FaRegCheckCircle />
-              </span>
-              <p className="list-p">
-                <span
-                  className="left-p-span
-                          "
-                >
-                  Coordinated Care
+              <div className="icon-box">
+                <span className="core-icon">
+                  <FaRegCheckCircle />
                 </span>
-              </p>
-            </div>
+
+                <p className="link">Coordinated Care</p>
+              </div>
             </div>
             <Button text="Book Now" />
           </div>
@@ -167,6 +150,8 @@ function About() {
       <div className="card-parent parent">
         <div className="container card-container">
           <Swiper
+            data-aos="fade-up"
+            data-aos-delay="300"
             spaceBetween={30}
             centeredSlides={false}
             slidesPerView={4}
@@ -180,7 +165,6 @@ function About() {
             navigation={false}
             modules={[Autoplay, Pagination]}
             className="mySwiper"
-
             breakpoints={{
               300: {
                 slidesPerView: 1,
@@ -206,8 +190,6 @@ function About() {
               },
             }}
           >
-
-            
             {doctorData.map((item, index) => (
               <SwiperSlide>
                 <div className="card" key={index}>
@@ -238,10 +220,14 @@ function About() {
 
       {/* Third section start */}
 
-      <div className="parent dr-parent sectionbreak">
+      <div
+        className="parent dr-parent sectionbreak"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div className="container dr-container">
-          <div className="left-img"></div>
-          <div className="left-text">
+          <div className="left-img" data-aos="fade-up"></div>
+          <div className="left-text" data-aos="fade-up">
             <div className="text">
               <div className="text-contain">
                 <h3 className="left-h3">Book a Specialist Appointment Now!</h3>
@@ -258,13 +244,21 @@ function About() {
         </div>
       </div>
 
-      <div className="parent dr-parent dr-parent2 ">
+      <div
+        className="parent dr-parent dr-parent2"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
         <div className="container dr-container bottom">
-          <div className="left-img left-img-2"></div>
-          <div className="left-text">
+          <div
+            className="left-img left-img-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          ></div>
+          <div className="left-text" data-aos="fade-up" data-aos-delay="300">
             <div className="text">
               <div className="text-contain">
-                <h3 className="left-h3" >Get a Second Opinion in Seconds</h3>
+                <h3 className="left-h3">Get a Second Opinion in Seconds</h3>
                 <p>
                   {" "}
                   Need a second opinion? Upload your medical records to the

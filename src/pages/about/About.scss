@@ -2,7 +2,7 @@
     // margin: 50px 0px;
 
     &.about-parent2 {
-        background: #f4f4f4;
+        background: var(--grey);
         padding: calc(var(--unit)*3) 0px;
     }
 
@@ -16,9 +16,17 @@
         .about-left {
             width: 50%;
             height: auto;
-            background: url("../../assets/appointment.webp");
+            background: url("../../assets/deliver_healthcare.jpg");
             border-radius: calc(var(--unit)/2);
+
+           
         }
+        & .about-left-2{
+        
+            background: url("../../assets/clinic.jpg");
+
+
+            }   
 
         .about-right {
             width: 50%;
@@ -27,6 +35,9 @@
             gap: calc(var(--unit));
 
             .icon-main-box {
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
 
                 .icon-box {
                     display: flex;
@@ -82,7 +93,7 @@
         justify-content: center;
         align-items: center;
         gap: var(--unit);
-        padding: calc(var(--unit)*3) calc(var(--unit)/2);
+        padding: calc(var(--unit)*3) calc(var(--unit)/2);   
 
         .card {
             width: calc(var(--width) / 5);
@@ -173,6 +184,11 @@
     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
         background-color: var(--accent-yellow);
     }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        top: 87% !important;
+    }
 }
 
 // third section
@@ -180,7 +196,7 @@
 .dr-parent {
 
     &.sectionbreak {
-        background-color: #f4f4f4;
+        background-color: var(--grey);
         padding: calc(var(--unit)*3) 20px;
     }
 
@@ -208,7 +224,7 @@
             border-radius: 10px 0px 0px 10px;
 
             &.left-img-2 {
-                background: url("../../assets/appointment.webp");
+                background: url("../../assets/Second_Opinion.webp");
                 border-radius: 0px 10px 10px 0px;
                 background-position: center center;
                 background-repeat: no-repeat;
@@ -310,7 +326,8 @@
 
 @media (max-width:500px) {
     .card-container {
-        padding: calc(var(--unit)*2) calc(var(--unit)/2) !important;
+        // padding: calc(var(--unit)*2) calc(var(--unit)/2) !important;
+        padding: 0px !important;
     }
 }
 
@@ -320,7 +337,6 @@
 
 @media (max-width:1000px) {
     .dr-parent {
-
         &.dr-parent2 {
             padding: calc(var(--unit)*3) 20px;
         }
@@ -339,7 +355,14 @@
                 width: 100%;
                 padding: 0px !important;
             }
+        }
+    }
+}
 
+@media (max-width:500px) {
+    .dr-parent {
+        &.dr-parent2 {
+            padding: calc(var(--unit)) 20px;
         }
 
     }
