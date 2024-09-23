@@ -35,7 +35,8 @@ const VideoSec = (props) => {
     url={props.videoSource}
     width="100%"
     height="100%"
-
+className="videoPlayer"
+style={{borderRadius:"20px"}}
   />
 </div>
 
