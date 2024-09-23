@@ -34,6 +34,7 @@
                 color: var(--white);
                 font-size: 40px;
                 text-align: center;
+                line-height: 120%;
             }
         }
     }
@@ -72,5 +73,45 @@
 
     .slide-img3 {
         background: url('../../assets/herosection/hero3.jpeg');
+    }
+}
+
+@media only screen and (max-width:500px){
+    .herosection-parent .slide .slide-text-container .slide-heading{
+        font-size: 22px !important;
+    }
+
+    .swiper-button-next:after,.swiper-button-prev:after{
+        font-size: 25px !important;
+       
+    }
+}
+
+// @media only screen and (max-width:600px){
+//     .herosection-parent .slide .slide-text-container .slide-heading{
+//         font-size: 28px;
+//     }
+//     .swiper-button-next:after,.swiper-button-prev:after{
+//         font-size: 28px !important;
+       
+//     }
+// }
+
+@media only screen and (max-width:600px){
+    .herosection-parent .slide .slide-text-container .slide-heading{
+        font-size: 30px;
+    }
+    .swiper-button-next:after,.swiper-button-prev:after{
+        font-size: 28px !important;
+       
+    }
+}
+
+@media only screen and (max-width:800px){
+  
+    // }
+    .swiper-button-next:after,.swiper-button-prev:after{
+        font-size: 28px !important;
+       
     }
 }
