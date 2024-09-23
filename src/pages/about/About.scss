@@ -19,14 +19,11 @@
             background: url("../../assets/deliver_healthcare.webp");
             border-radius: calc(var(--unit)/2);
 
-           
         }
-        & .about-left-2{
-        
+
+        & .about-left-2 {
             background: url("../../assets/clinic.jpg");
-
-
-            }   
+        }
 
         .about-right {
             width: 50%;
@@ -38,6 +35,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: baseline;
+                gap: 5px;
 
                 .icon-box {
                     display: flex;
@@ -93,7 +91,8 @@
         justify-content: center;
         align-items: center;
         gap: var(--unit);
-        padding: calc(var(--unit)*3) calc(var(--unit)/2);   
+        padding: calc(var(--unit)*3) calc(var(--unit)/2);
+      
 
         .card {
             width: calc(var(--width) / 5);
@@ -104,17 +103,17 @@
             overflow: hidden;
             box-shadow: var(--shadow);
             border-radius: calc(var(--unit)/2);
+           
 
             .front {
                 height: 100%;
-                width: 100%;
+                aspect-ratio: 1;
                 padding: calc(var(--unit) / 2);
                 background-color: var(--white);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                gap: var(--unit);
                 position: relative;
                 transition: var(--trans);
 
@@ -187,7 +186,7 @@
 
     .swiper-horizontal>.swiper-pagination-bullets,
     .swiper-pagination-bullets.swiper-pagination-horizontal {
-        top: 87% !important;
+        top: 92% !important;
     }
 }
 
@@ -326,8 +325,8 @@
 
 @media (max-width:500px) {
     .card-container {
-        // padding: calc(var(--unit)*2) calc(var(--unit)/2) !important;
-        padding: 0px !important;
+        padding: calc(var(--unit)) calc(var(--unit)/2) !important;
+        // padding: 0px !important;
     }
 }
 
@@ -363,6 +362,15 @@
     .dr-parent {
         &.dr-parent2 {
             padding: calc(var(--unit)) 20px;
+        }
+
+        .dr-container {
+
+            .text{
+                text-align: center;
+                align-items: center;
+               
+            }
         }
 
     }
