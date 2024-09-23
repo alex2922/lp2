@@ -30,15 +30,16 @@ const VideoSec = (props) => {
         width="100%"
         height='100%'
         className="videoLaptop"
+       
       />
             </div>
           </div>
           <div className="right">
             <div className="top-sec">
-              <h1 className="heading">
+              <h2 className="heading">
                 {props.heading}
                 <span>{props.highlight}</span>
-              </h1>
+              </h2>
               <p>{props.desc}</p>
             </div>
             <div className="bottom-cta">

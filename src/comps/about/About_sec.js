@@ -2,19 +2,18 @@ import React from "react";
 import "./about.scss";
 import Button from "../button/Button";
 
-const About_sec = (props) => {
+const About_sec = () => {
   return (
     <>
-      <div className="about-parent parent">
-        <div className="about-container container">
+      <div className="aboutsec-parent parent">
+        <div className="aboutsec-container container">
           <div className="about-left">
             <div className="mob-img bg-img-cover"></div>
           </div>
           <div className="about-right">
-            <h1 className="heading">
-              {" "}
+            <h2 className="heading">
               About <span>Axoncare</span>
-            </h1>
+            </h2>
             <p className="desc">
               AxonCare, a service brand by Axonic, is a global healthcare
               network that connects doctors and patients worldwide through
@@ -26,7 +25,7 @@ const About_sec = (props) => {
               overcome barriers of language and geography, receiving care in the
               way that suits you best.
             </p>
-            <Button text={props.btn_text} href={props.link} />
+            <Button text="Know More" href="/contact" />
           </div>
         </div>
       </div>

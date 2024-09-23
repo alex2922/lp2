@@ -2,30 +2,31 @@ import React from "react";
 import "./About.scss";
 import { FaRegCheckCircle } from "react-icons/fa";
 import lifeIcon from "../../assets/icons/life.gif";
-import sugarIcon from "../../assets/icons/glucosemeter.gif";
+import sugarIcon from "../../assets/icons/glucose_meter.gif";
 import emotinalIcon from "../../assets/icons/emotional-intelligence.gif";
 import physIcon from "../../assets/icons/phys.gif";
+import Button from "../../comps/button/Button";
 
 function About() {
 
   const doctorData = [
     {
-      image: physIcon.src,
+      image: physIcon,
       name: "General Physician",
       designation: "OPD Timings: 10am-4pm",
     },
     {
-      image: sugarIcon.src,
+      image: sugarIcon,
       name: "Diabetologist",
       designation: "OPD Timings: 10am-4pm",
     },
     {
-      image: lifeIcon.src,
+      image: lifeIcon,
       name: "Gynecologist",
       designation: "OPD Timings: 10am-4pm",
     },
     {
-      image: emotinalIcon.src,
+      image: emotinalIcon,
       name: "Mental Health Counselor",
       designation: "OPD Timings: 10am-4pm",
     },
@@ -36,7 +37,7 @@ function About() {
 
       <div className="parent about-parent">
         <div className="container about-container">
-          <div className="about-left"></div>
+          <div className="about-left bg-img-cover"></div>
           <div className="about-right">
             <h2>Revolutionising the way we deliver healthcare</h2>
             <p>
@@ -50,9 +51,7 @@ function About() {
               of a healthcare ecosystem that transcends barriers of language and
               distance, receiving care in your preferred way.
             </p>
-            <a href="">
-              <span className="btn">Book Now</span>
-            </a>
+           <Button text="Book Now" />
           </div>
         </div>
       </div>
@@ -144,9 +143,7 @@ function About() {
                 {/* Centralised medical records, personalised support. */}
               </p>
             </div>
-            <a href="">
-              <span className="btn">Book Now</span>
-            </a>
+            <Button text="Book Now" />
           </div>
         </div>
       </div>
@@ -200,9 +197,7 @@ function About() {
                   time slot, and book your appointment online.
                 </p>
               </div>
-              <a href="">
-              <span className="btn">Book Now</span>
-            </a>
+              <Button text="Book Now" />
             </div>
           </div>
         </div>
@@ -222,9 +217,7 @@ function About() {
                   evaluation from a qualified expert. 
                 </p>
               </div>
-              <a href="">
-              <span className="btn">Book Now</span>
-            </a>
+              <Button text="Book Now" />
             </div>
           </div>
         </div>
