@@ -29,7 +29,7 @@ function Home() {
     {
       icon: twentyfourseven,
       heading: "24/7 Comprehensive Care For You",
-      desc: "We pride ourselves on our ability to provide care whenever you need it. Our services ensure that you get timely, comprehensive care for both physical and mental health concerns.",
+      desc: "We pride ourselves on our ability to provide care whenever and wherever you need it. Our services ensure that you get timely, comprehensive care for both physical and mental health concerns.",
       btn_text: " Book an Appointment ",
       href_link: "/",
        animation:"fade-down"
@@ -47,7 +47,7 @@ function Home() {
     {
       icon: admin,
       heading: "No Admins, No Overheads – Just Care",
-      desc: "With AxonCare’s AI-powered practice management, you can focus solely on patient care, while we handle all administrative tasks, allowing you to work on your terms and enjoy a balanced life. ",
+      desc: "With AxonCare’s AI-powered practice management, you can focus solely on patient care, while we handle all administrative tasks, allowing you to work on your terms and enjoy life. ",
       btn_text: " Join AxonCare Network  ",
       href_link: "/",
        animation:"fade-up"
