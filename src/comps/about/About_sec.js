@@ -5,8 +5,8 @@ import Button from "../button/Button";
 const About_sec = (props) => {
   return (
     <>
-      <div className="about-parent parent">
-        <div className="about-container container">
+      <div className="aboutsec-parent parent">
+        <div className="aboutsec-container container">
           <div className="about-left">
             <div className="mob-img bg-img-cover"></div>
           </div>
