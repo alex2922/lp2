@@ -45,13 +45,12 @@ const Footer = () => {
             </div>
             <div className="address-box">
               <span>
-              <MdOutlineLocationOn />
+                <MdOutlineLocationOn />
               </span>
               <p>3911 Concord Pike #8030, Wilmington, Delaware,19803</p>
             </div>
           </div>
         </div>
-
         <div className="footer-bottom">
           <p>© Copyright AxonCare 2024. All right reserved.</p>
         </div>
