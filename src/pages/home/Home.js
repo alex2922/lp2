@@ -1,10 +1,13 @@
 import React from 'react'
+import Partners from '../../comps/partners/Partners'
 
 function Home() {
   return (
-    <div>
-      
-    </div>
+    <>
+    <Partners />
+    
+    
+    </>
   )
 }
 
