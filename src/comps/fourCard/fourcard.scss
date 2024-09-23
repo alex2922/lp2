@@ -110,18 +110,15 @@
     padding: var(--unit) ;
   }
 }
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  top: 96% !important;
+
+.swiper-button-next{
+  color: var(--accent-blue);
 }
 
-.swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
-  background-color: var(--accent-yellow);
+.swiper-button-prev{
+  color: var(--accent-blue);
+
 }
-
-
 @media only screen and (max-width: 600px){
 
   .card-section-parent{
