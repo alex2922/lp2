@@ -5,6 +5,7 @@ import Partners from "../../comps/partners/Partners";
 function Home() {
   return (
     <div>
+      
       <Videosec
         heading="For Patients "
         highlight=" 24/7 Care Anytime, Anywhere"
