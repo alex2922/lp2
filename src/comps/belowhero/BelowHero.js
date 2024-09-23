@@ -89,14 +89,14 @@ href="/contact"                      />
                         centeredSlides={false}
                         slidesPerView={1}
                         autoplay={{
-                            delay: 2500,
+                            delay: 250000,
                             disableOnInteraction: false,
                         }}
                         pagination={{
-                            clickable: false,
+                            clickable: true,
                         }}
                         navigation={true}
-                        modules={[Autoplay,  Navigation]}
+                        modules={[Autoplay, Pagination, Navigation]}
                         className="mySwiper"
                     >     <SwiperSlide>
                             <div className="box ">
