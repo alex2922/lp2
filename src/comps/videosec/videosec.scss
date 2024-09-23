@@ -81,7 +81,7 @@
 
 @media only screen and (max-width: 900px) {
   .VideoSec{
-padding: calc(var(--unit)/2);
+padding: calc(var(--unit)*2) calc(var(--unit)/2) !important;
   }
 
   .VideoSec-container {
