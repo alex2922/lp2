@@ -1,0 +1,114 @@
+.card-section-parent {
+  width: 100%;
+  height: auto;
+  padding: calc(var(--unit) * 3);
+  .card-section-container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: calc(var(--unit)/2);
+
+    .mySwiper {
+      width: 100%;
+      height: 100%;
+      padding: var(--unit);
+    }
+
+    .cardSlide {
+      width: calc(var(--width) / 4);
+      height: auto;
+      background-color: var(--white);
+      box-shadow: var(--shadow);
+      padding: calc(var(--unit) );
+      border-radius: var(--unit);
+    }
+
+    .card {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: calc(var(--unit));
+
+      img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        aspect-ratio: 1;
+        
+        filter: hue-rotate(225deg) brightness(1.2);
+      }
+
+      h3 {
+        text-align: center;
+        width: 100%;
+        height: 10%;
+        max-width: 20ch;
+        
+      }
+
+      p {
+        text-align: center;
+        width: 100%;
+        height: 50%;
+       
+      }
+
+      .buttn-sec {
+        height: 10%;
+        // width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .card-section-parent {
+    .card-section-container {
+      padding: 0px calc(var(--unit) * 5);
+      .cardSlide {
+        .card {
+          padding: var(--unit) !important;
+          .top-icon {
+            height: auto !important;
+          }
+
+          .heading {
+            height: auto !important;
+          }
+
+          .desc {
+            height: auto !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .card-section-parent {
+    padding: var(--unit) !important;
+  }
+
+  .card-section-container {
+    padding: var(--unit) !important;
+  }
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  top: 96% !important;
+}
+
+.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: var(--accent-yellow);
+}
