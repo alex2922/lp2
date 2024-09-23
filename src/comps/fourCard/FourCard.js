@@ -68,7 +68,7 @@ const FourCard = (props) => {
 
                   <p>{item.desc}</p>
 
-                  <Button text={item.btn_text} href={item.href_link} />
+                  <Button text={item.btn_text} href="/contact" />
                 </div>
               </SwiperSlide>
             ))}
