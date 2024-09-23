@@ -3,9 +3,14 @@ import Videosec from "../../comps/videosec/Videosec";
 import doctorVideo from "../../assets/videos/doctor_video.webm"
 import Partners from "../../comps/partners/Partners";
 import FourCard from "../../comps/fourCard/FourCard";
+import Herosection from "../../comps/hero/Herosection";
+import About_sec from "../../comps/about/About_sec";
 function Home() {
   return (
     <div>
+      <Herosection />
+      <About_sec/>
+
       
       <Videosec
         heading="For Patients "

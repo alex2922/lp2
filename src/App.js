@@ -15,7 +15,6 @@ function App() {
       <BrowserRouter>
        
       <Header/>
-        <About_sec />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
