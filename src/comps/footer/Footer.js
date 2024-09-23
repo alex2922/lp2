@@ -37,12 +37,12 @@ const Footer = () => {
           </div>
           <div className="address-box-container footer-box">
             <h2 className="heading">Address</h2>
-            <div className="address-box">
+            <a href="mailto:info@axoncare.com" className="address-box">
               <span>
                 <MdMailOutline />
               </span>
               <p>info@axoncare.com</p>
-            </div>
+            </a>
             <div className="address-box">
               <span>
                 <MdOutlineLocationOn />
