@@ -75,7 +75,7 @@ function Home() {
 
       
       <Videosec
-        heading="For Patients -"
+        heading="For Patients "
         highlight=" Care Anytime, Anywhere, In Any Language "
         desc="We bring healthcare to you—from daily health checkups to specialist appointments, you receive world-class care with just a few clicks. Our multispecialty smart clinic connects you to a specialist in minutes, allowing you to book appointments and store medical records in the AxonCare app. Our “Anytime Health” kiosk provides over 130 rapid test results, offering real-time health insights for both you and your doctor. This integrated service ensures a comprehensive view of your health for seamless, accurate care."
         btn_text="Book Appointment"
@@ -83,7 +83,7 @@ function Home() {
       />
       <FourCard cardData={cardData} />
       <Videosec
-        heading="For Doctors -"
+        heading="For Doctors "
         highlight=" With AxonCare, Make The Whole World Your OPD "
         desc="Doctors are a powerful community and are at the heart of the healthcare system. The AxonCare network is what you need if you're looking to expand your practice, boost clinic revenue, and make a global impact—all on a flexible schedule that suits your convenience. Our service network allows you to consult with patients from any corner of the world, at your preferred time. With AxonCare's support, you receive a comprehensive health history of patients, reducing consultation time and increasing patient reach. This enables you to grow your practice and revenue, while making a global impact through our healthcare network."
         btn_text=" Join the AxonCare Network "

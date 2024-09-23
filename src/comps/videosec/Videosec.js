@@ -11,34 +11,37 @@ const VideoSec = (props) => {
   return (
     <>
       <div className="parent VideoSec">
+   <div className="section-indication container">
+   <span className="section-indicator">{props.heading}</span>
+   </div>
+
         <div className="container VideoSec-container">
           <div className="left" data-aos="fade-up" >
-            <div className="video">
-              <ReactPlayer
-                config={{
-                  file: {
-                    forceVideo: true,
-                    attributes: {
-                      //   poster: {props.videoSource},
-                      preload: "metadata",
-                    },
-                  },
-                }}
-                autoPlay
-                loop
-                muted
-                playsinline
-                playing={true}
-                url={props.videoSource}
-                width="100%"
-                height="100%"
-                className="videoLaptop"
-              />
-            </div>
+          <div className="video">
+  <ReactPlayer
+    config={{
+      file: {
+        forceVideo: true,
+        attributes: {
+          preload: "metadata",
+        },
+      },
+    }}
+    autoPlay
+    loop
+    muted
+    playsinline
+    playing={true}
+    url={props.videoSource}
+    width="100%"
+    height="100%"
+
+  />
+</div>
+
           </div>
           <div className="right" data-aos="fade-down" >
             <div className="top-sec">
-              <span className="section-indicator">{props.heading}</span>
               <h2 className="heading ">
                 <span>{props.highlight}</span>
               </h2>
