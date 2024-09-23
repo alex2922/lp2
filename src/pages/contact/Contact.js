@@ -9,14 +9,14 @@ function Contact() {
         <div className="contact-left contact-body">
           {/* card 1 */}
           <div className="contact-card">
-            <div className="heading">Dubai Office :</div>
+            <h2 className="heading">Dubai Office :</h2>
             <div className="contact-card-box">
               
               <span>
                 <MdOutlineMail />
               </span>{" "}
               <div className="contact-info">
-              <h2 className="heading">Delaware Office</h2>
+              <h2 className="heading">Delaware Office : </h2>
               info@axoncare.com
               </div>
             
@@ -27,16 +27,10 @@ function Contact() {
               </span>{" "}
               info@axoncare.com
             </div>
-            <div className="contact-card-box">
-              <span>
-                <MdOutlineMail />
-              </span>{" "}
-              info@axoncare.com
-            </div>
           </div>
           {/* card 2 */}
           <div className="contact-card">
-            <div className="heading">Dubai Office :</div>
+            <h2 className="heading">Dubai Office :</h2>
             <div className="contact-card-box">
               <span>
                 <MdOutlineMail />
@@ -58,7 +52,7 @@ function Contact() {
           </div>
           {/* card 3 */}
           <div className="contact-card">
-            <div className="heading">Dubai Office :</div>
+            <h2 className="heading">Dubai Office :</h2>
             <div className="contact-card-box">
               <span>
                 <MdOutlineMail />
