@@ -3,6 +3,7 @@ import Videosec from "../../comps/videosec/Videosec";
 import patientvideo from "../../assets/videos/Render_webm.webm";
 import Partners from "../../comps/partners/Partners";
 import FourCard from "../../comps/fourCard/FourCard";
+import Herosection from "../../comps/hero/Herosection";
 import doctorVideo from "../../assets/videos/doctor_video.webm"
 // icons
 import optpmetrist from "../../assets/icons/optometrist.gif";
@@ -22,6 +23,7 @@ function Home() {
       desc: "We are a specialist hub providing appointments at your convenience. No need to search for specialist clinics or travel long distances; we have all the specialists you need under one roof.",
       btn_text: " Book an Appointment ",
       href_link: "/",
+      animation:"fade-up"
     },
     {
       icon: twentyfourseven,
@@ -29,6 +31,7 @@ function Home() {
       desc: "We pride ourselves on our ability to provide care whenever you need it. Our services ensure that you get timely, comprehensive care for both physical and mental health concerns.",
       btn_text: " Book an Appointment ",
       href_link: "/",
+       animation:"fade-down"
     },
     {
       icon: opinion,
@@ -36,6 +39,7 @@ function Home() {
       desc: "When it comes to healthcare, getting a second opinion is crucial. Our network of specialists provides expert insights on diagnoses, treatments, and prognoses for you and your family.",
       btn_text: " Book an Appointment",
       href_link: "/",
+       animation:"fade-up"
     },
   ];
   const cardData2 = [
@@ -45,6 +49,7 @@ function Home() {
       desc: "With AxonCare’s AI-powered practice management, you can focus solely on patient care, while we handle all administrative tasks, allowing you to work on your terms and enjoy a balanced life. ",
       btn_text: " Join AxonCare Network  ",
       href_link: "/",
+       animation:"fade-up"
     },
     {
       icon: boost,
@@ -52,6 +57,7 @@ function Home() {
       desc: "Increase your patient base and boost your revenue by attracting more patients through AxonCare's extensive global network. Our platform connects doctors with patients worldwide.",
       btn_text: " Join AxonCare Network ",
       href_link: "/",
+       animation:"fade-down"
     },
     {
       icon: global,
@@ -59,6 +65,7 @@ function Home() {
       desc: "Join a global network of healthcare professionals. With AxonCare, you are providing much-needed care to patients worldwide while revolutionising the way healthcare is delivered.",
       btn_text: " Join AxonCare Network ",
       href_link: "/",
+       animation:"fade-up"
     },
   ];
   return (

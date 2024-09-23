@@ -7,6 +7,8 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import './herosection.scss';
 import Button from '../button/Button';
+import Heronext from '../heronext/Heronext';
+import BelowHero from '../belowhero/BelowHero';
 
 function Herosection() {
     const prevRef = useRef(null);
@@ -18,6 +20,7 @@ function Herosection() {
                 <Swiper
                     spaceBetween={0}
                     centeredSlides={true}
+                    pauseOnMouseEnter= {true}
                     autoplay={{
                         delay: 2500,
                         disableOnInteraction: false,
@@ -32,6 +35,7 @@ function Herosection() {
                         swiper.navigation.init();
                         swiper.navigation.update();
                     }}
+                    
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
                 >
@@ -81,6 +85,8 @@ function Herosection() {
                     </div>
                 </div>
             </div>
+
+           <BelowHero/>
         </>
     );
 }

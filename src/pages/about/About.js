@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./About.scss";
 import { FaRegCheckCircle } from "react-icons/fa";
 import lifeIcon from "../../assets/icons/life.gif";
@@ -7,6 +7,8 @@ import emotinalIcon from "../../assets/icons/emotional-intelligence.gif";
 import physIcon from "../../assets/icons/phys.gif";
 import Button from "../../comps/button/Button";
 import { MdAccessTime } from "react-icons/md";
+import Aos from "aos";
+import "aos/dist/aos.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -17,8 +19,14 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 function About() {
+
+  useEffect(function () {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   const doctorData = [
     {
       image: physIcon,
@@ -49,7 +57,7 @@ function About() {
     <>
       {/* First section start */}
 
-      <div className="parent about-parent">
+      <div className="parent about-parent" >
         <div className="container about-container">
           <div className="about-left bg-img-cover"></div>
           <div className="about-right">
@@ -83,6 +91,7 @@ function About() {
               top-tier specialists from around the world, making global
               healthcare expertise just a tap away.
             </p>
+            <div className="icon-main-box">
             <div className="icon-box">
               <span className="core-icon">
                 <FaRegCheckCircle />
@@ -92,7 +101,7 @@ function About() {
                   className="left-p-span
                           "
                 >
-                  Global Access
+                 <Link > Global Access</Link>
                 </span>
               </p>
             </div>
@@ -152,6 +161,7 @@ function About() {
                 </span>
               </p>
             </div>
+            </div>
             <Button text="Book Now" />
           </div>
         </div>
@@ -161,7 +171,7 @@ function About() {
 
       {/* Second section start */}
 
-      <div className="card-parent parent">
+      <div className="card-parent parent" >
         <div className="container card-container">
           <Swiper
             spaceBetween={30}
@@ -216,7 +226,7 @@ function About() {
                       ></div>
                     </div>
                     <div className="doctor_name">
-                      <h2>{item.name}</h2>
+                      <h3>{item.name}</h3>
                     </div>
                   </div>
                   <div className="back">
@@ -261,7 +271,7 @@ function About() {
           <div className="left-text">
             <div className="text">
               <div className="text-contain">
-                <h3> Get a Second Opinion in Seconds</h3>
+                <h3 className="left-h3" >Get a Second Opinion in Seconds</h3>
                 <p>
                   {" "}
                   Need a second opinion? Upload your medical records to the
