@@ -1,4 +1,6 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef,useEffect, useState } from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -65,11 +67,14 @@ const flipCardData = [
 ]
 
 function Partners() {
+  useEffect(function () {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <div className="partners parent">
         <div className="partners-container container" id="five-card">
-          <div className="partners-top" id='partners'>
+          <div className="partners-top" id='partners' data-aos="fade-up" data-aos-delay="300">
             <span className="section-indicator">AxonCare Partners</span>
             <h2>The Global  AxonCare Network </h2>
             <p>Become a partner in revolutionising healthcare delivery with our tech-powered service, connecting you to the AxonCare network. Our cutting-edge "Anytime Health" kiosk, equipped with point-of-care testing devices, is at the heart of this network, linking healthcare professionals (doctors, labs, pharmacies) with beneficiaries (patients, corporates, elderly care facilities, schools, and residential societies).</p>
@@ -79,7 +84,7 @@ function Partners() {
               text="Join the AxonCare Network" /> */}
           </div>
 
-          <div className="partners-bottom">
+          <div className="partners-bottom" data-aos="fade-up" data-aos-delay="300">
             <div className="pleft">
               <div className="partner-c1">
                 <Flipcard

@@ -9,6 +9,7 @@ import Header from "./comps/header/Header";
 import Pagetop from "./comps/pagetop/Pagetop";
 import PopUp from "./comps/model/PopUp";
 import { useEffect, useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
       <BrowserRouter>
       <Header/>
         {/* <Footer /> */}
-       
+        <Toaster position="top-center" reverseOrder={false} />
       {/* <Header/> */}
       {toggle && <PopUp close={()=>setToggle(false)}/>}
         <Routes>

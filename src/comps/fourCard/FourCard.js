@@ -21,10 +21,13 @@ const FourCard = (props) => {
     <>
       <div className="card-section-parent parent">
         <div className="heading-container container">
+          <span className="section-indicator">
+            {props.heading}
+          </span>
           <h2>What we offer</h2>
         </div>
 
-        <div className="card-section-container container">
+        <div className="card-section-container container" data-aos="fade-up" >
           <Swiper
             slidesPerView={3}
             spaceBetween={30}
@@ -68,7 +71,7 @@ const FourCard = (props) => {
 
                   <p>{item.desc}</p>
 
-                  <Button text={item.btn_text} href={item.href_link} />
+                  <Button text={item.btn_text} href="/contact" />
                 </div>
               </SwiperSlide>
             ))}
