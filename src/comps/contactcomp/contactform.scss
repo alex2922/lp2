@@ -2,10 +2,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: calc(var(--unit)/2);
+  gap: calc(var(--unit));
   box-shadow: var(--shadow);
   padding: calc(var(--unit) * 2) var(--unit);
   border-radius: calc(var(--unit) / 2);
+background: var(--white);
   .contact-form {
     width: 100%;
     display: flex;
@@ -49,8 +50,7 @@
       }
       input:focus + label,
       textarea:focus + label,
-      input:not(:placeholder-shown):valid + label,
-      textarea:valid + label {
+      input:not(:placeholder-shown):valid + label {
         top: -2px;
         left: 10px;
         opacity: 1;
@@ -66,4 +66,10 @@
     }
   }
 
+}
+
+
+.contact-form-heading 
+{
+  color: var(--accent-yellow);
 }

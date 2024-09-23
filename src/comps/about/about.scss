@@ -1,6 +1,6 @@
 .aboutsec-parent {
-  padding: 50px 0px;
-  height: 500px;
+  padding: 100px 0px 50px 0px;
+  min-height: 300px;
   .aboutsec-container {
     display: flex;
     align-items: center;
@@ -8,22 +8,23 @@
     gap: calc(var(--unit) / 2);
     box-shadow: var(--shadow);
     border-radius: calc(var(--unit) / 2);
+    padding: 40px 0px;
     .about-left {
       width: 30%;
       display: flex;
       align-items: center;
       justify-content: center;
-
       position: relative;
       height: 100%;
+      background: red;
 
       .mob-img {
         aspect-ratio: 447/920;
-        height: 100%;
+        width:  220px;
         background: url("../../assets/Homepage/axonic\ mobile\ png.png");
         border-radius: 5px;
         position: absolute;
-        top: -30px;
+        bottom: -30px;
         // right: 50%;
       }
     }
@@ -32,9 +33,71 @@
       display:flex;
       flex-direction: column;
       gap:calc(var(--unit) /2);
+      transition: var(--trans);
+      padding: 0px calc(var(--unit) * 2) 0px 0px;
       .desc {
         text-align: justify;
       }
     }
   }
+}
+@media only screen and (max-width:1200px){
+    .aboutsec-parent{
+        .aboutsec-container{
+            margin:0px 10px;
+        }
+    }
+}
+@media only screen and (max-width:800px){
+    .aboutsec-parent{
+        height:800px;
+        
+        .aboutsec-container{
+            flex-direction: column;
+            .about-left{
+
+            }
+            .about-right{
+                width:100%;
+                align-items: center;
+                justify-content: center;
+                padding-bottom:20px;
+                .desc{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .aboutsec-parent{
+        height:900px;
+    }
+}
+
+
+
+
+
+.aboutsec{
+  min-height: 300px;
+  padding: 100px 0px 50px 0px;
+
+
+  .aboutsec-container{
+
+    margin: 0px 20px;
+    box-shadow: var(--shadow);
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--unit) / 2);
+    box-shadow: var(--shadow);
+
+  }
+
+
+
+
 }
