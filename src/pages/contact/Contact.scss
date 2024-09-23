@@ -22,15 +22,12 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        // gap: calc(var(--unit) / 3);
         background: var(--white);
-        // border: 1px solid red;
         .contact-card-box {
           display: flex;
           align-items: center;
           justify-content: flex-start;
           gap: calc(var(--unit) / 2);
-
           padding: 5px;
           span {
             display: flex;
@@ -38,12 +35,11 @@
             justify-content: center;
             color: var(--white);
             background: var(--accent-blue);
-            width: 40px;
-            height: 40px;
+            padding: 10px;
+            aspect-ratio: 1 / 1;
             border-radius: 100%;
           }
           .contact-info {
-            // border: 1px solid red;
             padding: 0px !important;
             line-height: 100%;
             gap: calc(var(--unit) / 4);
@@ -68,18 +64,17 @@
           border-radius: 50px;
           display: flex;
           align-items: center;
-          // gap: calc(var(--unit) / 2.5);
           padding: 5px;
           cursor: pointer;
           transition: var(--trans);
         
           .flag-content {
-            max-width: 0; // Start with 0 width
+            max-width: 0; 
             overflow: hidden;
-            white-space: nowrap; // Prevent text wrapping
-            transition: max-width 0.5s ease; // Add smooth transition for width
-            opacity: 0; // Start with hidden text
-            transition: opacity 0.3s ease, max-width 0.5s ease; // Add opacity transition
+            white-space: nowrap; 
+            transition: max-width 0.5s ease;
+            opacity: 0;
+            transition: opacity 0.3s ease, max-width 0.5s ease;
           }
         
           .flag {
@@ -128,6 +123,7 @@
   .flag-box{
    margin-bottom: 3px;
   }
+
 }
 
 

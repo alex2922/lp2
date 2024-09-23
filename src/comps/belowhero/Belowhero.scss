@@ -99,10 +99,10 @@
                     z-index: 99;
                     border-radius: 10px;
                     height: auto;
-                                     padding: calc(var(--unit) / 2);
+                    padding: calc(var(--unit) / 2);
                     gap: calc(var(--unit) / 2);
                     box-shadow: var(--shadow);
-                    
+
                     p {
                         display: block;
                     }
@@ -168,80 +168,91 @@
 
 
 
-    .belowhero1 {
-        margin-top: -100px;
-        padding: 20px 10px;
-        .belowhero-container1 {
-            // padding: 20px 10px;
-            .mySwiper {
-                width: 100%;
-                height: 100%;
-                padding: 20px 10px;
-.swiper-button-next:after,.swiper-button-prev:after{
-    font-size: 25px !important;
-    color: var(--accent-blue);
-}
+.belowhero1 {
+    margin-top: -100px;
+    padding: 20px 10px;
 
+    .belowhero-container1 {
+
+        // padding: 20px 10px;
+        .mySwiper {
+            width: 100%;
+            height: 100%;
+            padding: 20px 10px 40px 10px;
+
+            .swiper-button-next:after,
+            .swiper-button-prev:after {
+                font-size: 25px !important;
+                color: var(--accent-blue);
             }
 
+            .swiper-pagination-bullet {
+                background-color: var(--accent-yellow);
+                height: 10px;
+                width: 10px;
+            }
+
+        }
+
+        background: var(--white);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 0px;
+
+        .box {
+            // border: 1px solid red;
+            transition: var(--trans);
+            margin: auto;
+            // height: 100%;
+            width: 320px;
+            height: 310px !important;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: var(--unit);
             background: var(--white);
             border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           
-            padding: 0px;
-
-            .box {
-                // border: 1px solid red;
-                transition: var(--trans);
-                margin: auto;
-                // height: 100%;
-                width: 320px;
-
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                gap: var(--unit);
-                background: var(--white);
-                border-radius: 10px;
-                height: auto;
-                padding: calc(var(--unit) / 2);
-                gap: calc(var(--unit) / 2);
-                box-shadow: var(--shadow);
+            height: auto;
+            padding: calc(var(--unit) / 2);
+            gap: calc(var(--unit) / 2);
+            box-shadow: var(--shadow);
 
 
-                .icon {
-                    height: 70px;
-                    width: 50px;
-                    filter: hue-rotate(225deg) brightness(1.2);
-                }
-
-                p {
-                    text-align: center;
-                }
-
-                .icon11 {
-                    background: url('../../assets/icons/patient.gif');
-                }
-
-                .icon22 {
-                    background: url('../../assets/icons/doctor.gif');
-                }
-
-                .icon33 {
-                    background: url('../../assets/icons/clinic.gif');
-                }
-
-                .icon44 {
-                    background: url('../../assets/icons/handshake.gif');
-                }
-
-
+            .icon {
+                height: 70px;
+                width: 50px;
+                filter: hue-rotate(225deg) brightness(1.2);
             }
 
+            p {
+                text-align: center;
+            }
+
+            .icon11 {
+                background: url('../../assets/icons/patient.gif');
+            }
+
+            .icon22 {
+                background: url('../../assets/icons/doctor.gif');
+            }
+
+            .icon33 {
+                background: url('../../assets/icons/clinic.gif');
+            }
+
+            .icon44 {
+                background: url('../../assets/icons/handshake.gif');
+            }
 
 
         }
+
+
+
     }
+}
