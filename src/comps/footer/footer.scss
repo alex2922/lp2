@@ -10,22 +10,31 @@
       height: 100%;
       .footer-logo-box {
         border: 1px solid green;
+        
         .footer-logo {
           width: 180px;
           border: 1px solid green;
         }
       }
     }
+    .logo-box 
+    {
+        width: 30%;
+    }
     .links-box-container
     {
       border: 1px solid green;
-
+      width: 20%;
       .links-box 
       {
           display: flex;
           flex-direction: column;
-          
       }
     }
+    .legals-box 
+    {
+        border: 1px solid blue;
+    }
+
   }
 }
