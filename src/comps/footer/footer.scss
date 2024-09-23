@@ -1,40 +1,76 @@
 .footer-parent {
-  border: 1px solid red;
   height: fit-content;
   width: 100%;
+  background: url("../../assets/footer/blue-background.jpg");
+  padding: calc(var(--unit) * 2) 0px 0px 0px;
   .footer-container {
     display: flex;
-    justify-content: space-between;
-    .footer-box {
-      border: 1px solid red;
-      height: 100%;
-      .footer-logo-box {
-        border: 1px solid green;
-        
-        .footer-logo {
-          width: 180px;
-          border: 1px solid green;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: calc(var(--unit));
+
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      gap: calc(var(--unit) / 2);
+      .footer-box {
+        height: 100%;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        gap: calc(var(--unit));
+        padding: 10px;
+        h2 {
+          color: var(--accent-yellow);
+        }
+        .footer-logo-box {
+          .footer-logo {
+            height: 60px;
+          }
+        }
+      }
+      .logo-box {
+        width: 30%;
+      }
+      .links-box-container {
+        width: 20%;
+        .links-box {
+          display: flex;
+          flex-direction: column;
+          gap: calc(var(--unit) / 3);
+        }
+      }
+      .legals-box-container {
+        width: 20%;
+        .legals-box {
+          display: flex;
+          flex-direction: column;
+          gap: calc(var(--unit) / 3);
+        }
+      }
+
+      .address-box-container {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        .address-box {
+          display: flex;
+          align-items: flex-start;
+          gap: calc(var(--unit) / 3);
+
+          span {
+            color: var(--accent-yellow);
+            font-size: calc(var(--unit));
+          }
         }
       }
     }
-    .logo-box 
-    {
-        width: 30%;
-    }
-    .links-box-container
-    {
-      border: 1px solid green;
-      width: 20%;
-      .links-box 
-      {
-          display: flex;
-          flex-direction: column;
-      }
-    }
-    .legals-box 
-    {
-        border: 1px solid blue;
-    }
 
+    .footer-bottom {
+      padding: calc(var(--unit) / 2) 0px;
+      color: var(--white);
+      text-align: center;
+      border-top: 1px solid var(--white);
+    }
   }
 }
