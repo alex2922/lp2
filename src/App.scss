@@ -1,0 +1,203 @@
+:root {
+  --accent-blue: #020335;
+  --accent-yellow: #f1b821;
+  --black: #000;
+  --white: #fff;
+  --unit: 20px;
+  --trans: all 0.33s ease-in-out;
+  --trans-q: all 0.15s ease-in-out;
+  --shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  --width: 1160px;
+}
+
+*,
+*::after,
+*::before {
+  // border: 1px solid red;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "nexa-book", sans-serif;
+  font-size: calc(var(--unit));
+  // color: var(--black);
+}
+
+.parent {
+  width: 100%;
+  .container {
+    max-width: var(--width);
+    padding: 0px calc(var(--unit) / 2);
+    margin: auto;
+    height: 100%;
+    // border-right: 1px solid red;
+    // border-left: 1px solid red;
+
+  }
+}
+
+// custom fonts
+@font-face {
+  font-family: "nexa-heavy";
+  src: url("./fonts/Nexa-Heavy.woff2") format("woff2");
+
+}
+@font-face {
+  font-family: "nexa-black";
+  src: url("./fonts/Nexa-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: "nexa-bold";
+  src: url("./fonts/Nexa-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "nexa-book";
+  src: url("./fonts/Nexa-Book.woff2") format("woff2");
+
+}
+@font-face {
+  font-family: "nexa-light";
+  src: url("./fonts/Nexa-Light.woff2") format("woff2");
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+p,.para{
+  line-height: 26px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-size: 18px;
+}
+
+
+.btn,
+.btn *,
+.btn :after,
+.btn :before,
+.btn:after,
+.btn:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: var(--accent-blue);
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 50%;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  font-family: "nexa-bold";
+  width: fit-content;
+}
+
+.btn:disabled {
+  cursor: default;
+}
+
+.btn:-moz-focusring {
+  outline: auto;
+}
+
+.btn svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn [hidden] {
+  display: none;
+}
+
+.btn {
+
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 0.8rem 2rem 0.7rem 2rem;
+  position: relative;
+  // text-transform: uppercase;
+}
+
+.btn .original {
+  background: var(--accent-yellow);
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+  font-family: "nexa-bold";
+  font-size:1rem;
+  padding: 0.45rem 2rem 0.4rem 2rem;
+}
+
+.btn:hover .original {
+  transform: translateY(110%);
+}
+
+.btn .letters {
+  display: inline-flex;
+}
+
+.btn span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+  font-size:1rem;
+}
+
+.btn span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+.bg-img-cover{
+  background-size:cover !important;
+  background-repeat:no-repeat !important;
+  background-position: center center !important;
+}
+.bg-img-contain{
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  background-size:contain !important;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color:var(--accent-blue);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--accent-yellow);
+  border-radius: 10px;
+}
+
+
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent-yellow) var(--accent-blue);
+}
+
+body {
+  -ms-overflow-style: scrollbar;
+}
