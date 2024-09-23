@@ -17,6 +17,7 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 function About() {
   const doctorData = [
@@ -83,6 +84,7 @@ function About() {
               top-tier specialists from around the world, making global
               healthcare expertise just a tap away.
             </p>
+            <div className="icon-main-box">
             <div className="icon-box">
               <span className="core-icon">
                 <FaRegCheckCircle />
@@ -92,7 +94,7 @@ function About() {
                   className="left-p-span
                           "
                 >
-                  Global Access
+                 <Link > Global Access</Link>
                 </span>
               </p>
             </div>
@@ -151,6 +153,7 @@ function About() {
                   Coordinated Care
                 </span>
               </p>
+            </div>
             </div>
             <Button text="Book Now" />
           </div>
@@ -216,7 +219,7 @@ function About() {
                       ></div>
                     </div>
                     <div className="doctor_name">
-                      <h2>{item.name}</h2>
+                      <h3>{item.name}</h3>
                     </div>
                   </div>
                   <div className="back">
@@ -261,7 +264,7 @@ function About() {
           <div className="left-text">
             <div className="text">
               <div className="text-contain">
-                <h3> Get a Second Opinion in Seconds</h3>
+                <h3 className="left-h3" >Get a Second Opinion in Seconds</h3>
                 <p>
                   {" "}
                   Need a second opinion? Upload your medical records to the
