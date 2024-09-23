@@ -3,7 +3,6 @@ import Videosec from "../../comps/videosec/Videosec";
 import patientvideo from "../../assets/videos/Render_webm.webm";
 import Partners from "../../comps/partners/Partners";
 import FourCard from "../../comps/fourCard/FourCard";
-import Herosection from "../../comps/hero/Herosection";
 import doctorVideo from "../../assets/videos/doctor_video.webm"
 // icons
 import optpmetrist from "../../assets/icons/optometrist.gif";
