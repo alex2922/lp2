@@ -11,12 +11,12 @@ const VideoSec = (props) => {
   return (
     <>
       <div className="parent VideoSec">
-   <div className="section-indication container">
+   <div className="section-indication container"  >
    <span className="section-indicator">{props.heading}</span>
    </div>
 
-        <div className="container VideoSec-container">
-          <div className="left" data-aos="fade-up" >
+        <div className="container VideoSec-container"  data-aos="fade-up" >
+          <div className="left"  >
           <div className="video">
   <ReactPlayer
     config={{
@@ -41,7 +41,7 @@ style={{borderRadius:"20px"}}
 </div>
 
           </div>
-          <div className="right" data-aos="fade-up" >
+          <div className="right" >
             <div className="top-sec">
               <h2 className="heading ">
                 <span>{props.highlight}</span>
