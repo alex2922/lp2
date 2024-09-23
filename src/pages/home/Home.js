@@ -82,7 +82,7 @@ function Home() {
         btn_text="Book Appointment"
         videoSource={patientvideo}
       />
-      <FourCard cardData={cardData} />
+      <FourCard cardData={cardData} heading="For Patients" />
       <Videosec
         heading="For Doctors "
         highlight=" With AxonCare, Make The Whole World Your OPD "
@@ -90,7 +90,7 @@ function Home() {
         btn_text=" Join the AxonCare Network "
         videoSource={doctorVideo}
       />
-      <FourCard cardData={cardData2} />
+      <FourCard cardData={cardData2} heading="For Doctors" />
       <Partners />
     </div>
   );

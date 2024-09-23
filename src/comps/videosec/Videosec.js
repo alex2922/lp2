@@ -49,7 +49,7 @@ style={{borderRadius:"20px"}}
               <p>{props.desc}</p>
             </div>
             <div className="bottom-cta">
-              <Button text={props.btn_text} href={props.link} />
+              <Button text={props.btn_text} href="/contact" />
             </div>
           </div>
         </div>
