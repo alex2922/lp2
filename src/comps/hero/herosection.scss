@@ -1,28 +1,70 @@
-.herosection-parent{
-
-.mySwiper{
-    height: 100%;
-    width: 1005px;
-}
-
-.slide{
-    height: 100%;
+.herosection-parent {
     width: 100%;
-    position: relative;
+    height: 100svh;
 
-}
-.slide-img1{
-   
+    .mySwiper {
+        height: 100%;
+        width: 100%;
+    }
 
-}
-.overlay {
-    position: absolute;
-    background: rgba(3, 3, 3, 0.39);
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
+    .overlay {
+        position: absolute;
+        background: rgba(3, 3, 3, 0.517);
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+    }
 
+    .slide {
+        height: 100%;
+        width: 100%;
+        position: relative;
 
+        .slide-text-container {
+            display: flex;
+            flex-direction: column;
+            gap: var(--unit);
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            position: relative;
 
+            .slide-heading {
+                color: var(--white);
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+    }
+
+    // Custom Navigation Buttons
+    .custom-nav-buttons {
+        .swiper-button-prev, .swiper-button-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+            cursor: pointer;
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+        }
+        .swiper-button-prev {
+            left: 10px;
+        }
+        .swiper-button-next {
+            right: 10px;
+        }
+    }
+
+    // Slide background images
+    .slide-img1 {
+        background: url('../../assets/herosection/hero1.jpg');
+    }
+    .slide-img2 {
+        background: url('../../assets/herosection/hero2.jpeg');
+    }
+    .slide-img3 {
+        background: url('../../assets/herosection/hero3.jpeg');
+    }
 }
