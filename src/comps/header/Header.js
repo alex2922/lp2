@@ -53,73 +53,88 @@ const Header = () => {
               </div>
               <div className="menu-links">
                 <div className="top">
-                <Link to="/"
-                  onClick={() => setNav(false)}
-                  data-aos="fade-down"
-                  data-aos-delay="200"
-                >
-                  Home
-                </Link>
-                <Link to="/about"
-                  onClick={() => setNav(false)}
-                  data-aos="fade-down"
-                  data-aos-delay="400"
-                >
-                  About
-                </Link>
-
-                <ul>
-                  <a
-                    href="#"
-                    onClick={() => setDrop(!drop)}
+                  <Link
+                    to="/"
+                    onClick={() => setNav(false)}
                     data-aos="fade-down"
-                    data-aos-delay="600"
+                    data-aos-delay="200"
                   >
-                    AxonCare NetWork
-                    <FaAngleDown />
-                  </a>
+                    Home
+                  </Link>
+                  <Link
+                    to="/about"
+                    onClick={() => setNav(false)}
+                    data-aos="fade-down"
+                    data-aos-delay="400"
+                  >
+                    About
+                  </Link>
 
-                  {drop && (
-                    <div className="menudropdown">
-                      <a href="/#partners" onClick={() => setNav(false)}>Labs and Pharmacies</a>
-                      <a  href="/#partners" onClick={() => setNav(false)}>Corporates</a>
-                      <a href="/#partners" onClick={() => setNav(false)}>Elderly Care</a>
-                      <a href="/#partners" onClick={() => setNav(false)}>Societies</a>
-                      <a href="/#partners" onClick={() => setNav(false)}>Schools</a>
-                    </div>
-                  )}
-                </ul>
+                  <ul>
+                    <a
+                      href="#"
+                      onClick={() => setDrop(!drop)}
+                      data-aos="fade-down"
+                      data-aos-delay="600"
+                    >
+                      AxonCare NetWork
+                     <div className={drop? "arrow active": "arrow"}> <FaAngleDown />  </div>
+                    </a>
 
-                <Link to="/contact"
-                  onClick={() => setNav(false)}
-                  data-aos="fade-down"
-                  data-aos-delay="800"
-                >
-                  Contact Us
-                </Link>
+                    {drop && (
+                      <div className="menudropdown">
+                        <a href="/#partners" onClick={() => setNav(false)}>
+                          Labs and Pharmacies
+                        </a>
+                        <a href="/#partners" onClick={() => setNav(false)}>
+                          Corporates
+                        </a>
+                        <a href="/#partners" onClick={() => setNav(false)}>
+                          Elderly Care
+                        </a>
+                        <a href="/#partners" onClick={() => setNav(false)}>
+                          Societies
+                        </a>
+                        <a href="/#partners" onClick={() => setNav(false)}>
+                          Schools
+                        </a>
+                      </div>
+                    )}
+                  </ul>
+
+                  <Link
+                    to="/contact"
+                    onClick={() => setNav(false)}
+                    data-aos="fade-down"
+                    data-aos-delay="800"
+                  >
+                    Contact Us
+                  </Link>
                 </div>
 
-               <div className="bottom">
-               <div className="mobile-number" data-aos-delay="1000">
-                  <a href="mailto:info@axonichealth.com" className="contact">
-                    <div className="icon">
-                      <IoIosMail />
-                    </div>
-                    <p>info@axonichealth.com</p>
-                  </a>
+                <div className="bottom">
+                  <div className="mobile-number" data-aos-delay="1000">
+                    <a href="mailto:info@axonichealth.com" className="contact">
+                      <div className="icon">
+                        <IoIosMail />
+                      </div>
+                      <p>info@axonichealth.com</p>
+                    </a>
 
-                  <a
-                    href="https://maps.app.goo.gl/Lm8J55WWh1qwUqdc8"
-                    target="_blank"
-                    className="contact"
-                  >
-                    <div className="icon">
-                      <ImLocation2 />
-                    </div>
-                    <p>3911 Concord Pike #8030, Wilmington, Delaware, 19803</p>
-                  </a>
+                    <a
+                      href="https://maps.app.goo.gl/Lm8J55WWh1qwUqdc8"
+                      target="_blank"
+                      className="contact"
+                    >
+                      <div className="icon">
+                        <ImLocation2 />
+                      </div>
+                      <p>
+                        3911 Concord Pike #8030, Wilmington, Delaware, 19803
+                      </p>
+                    </a>
+                  </div>
                 </div>
-               </div>
               </div>
               <div className="clickarea" onClick={() => setNav(false)}></div>
             </div>
