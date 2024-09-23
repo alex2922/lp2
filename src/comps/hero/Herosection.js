@@ -4,9 +4,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { HiOutlineArrowNarrowLeft } from "react-icons/hi";
-import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from 'react-icons/hi';
 import './herosection.scss';
+import Button from '../button/Button';
 
 function Herosection() {
     const prevRef = useRef(null);
@@ -15,7 +15,6 @@ function Herosection() {
     return (
         <>
             <div className="herosection-parent parent">
-
                 <Swiper
                     spaceBetween={0}
                     centeredSlides={true}
@@ -36,49 +35,51 @@ function Herosection() {
                     modules={[Autoplay, Pagination, Navigation]}
                     className="mySwiper"
                 >
-
                     <SwiperSlide>
                         <div className="slide slide-img1 bg-img-cover">
                             <div className="overlay"></div>
                             <div className="slide-text-container container">
                                 <h1 className='slide-heading'>AI and Tech Revolutionising healthcare Delivery</h1>
-                                <button>Know More</button>
+
+                                <Button text="Know More"
+                                    href="https://axonichealth.com/"
+                                    blank=" {ture}"
+                                />
                             </div>
                         </div>
                     </SwiperSlide>
-
                     <SwiperSlide>
                         <div className="slide slide-img2 bg-img-cover">
                             <div className="overlay"></div>
                             <div className="slide-text-container container">
                                 <h1 className='slide-heading'>Anytime, Anywhere, In Any Language</h1>
-                                <button>Know More</button>
+                                <Button text=" Consult Now"
+                                />
                             </div>
                         </div>
                     </SwiperSlide>
-
                     <SwiperSlide>
                         <div className="slide slide-img3 bg-img-cover">
                             <div className="overlay"></div>
                             <div className="slide-text-container container">
                                 <h1 className='slide-heading'>Healthcare Is More Accessible Than Ever With Us</h1>
-                                <button>Join AxonCare</button>
+                                <Button text=" Join AxonCare"
+
+                                />
                             </div>
                         </div>
                     </SwiperSlide>
-
                 </Swiper>
 
                 {/* Custom Navigation Buttons */}
                 <div className="custom-nav-buttons">
                     <div ref={prevRef} className="swiper-button-prev">
-                    <HiOutlineArrowNarrowLeft />
+                        <HiOutlineArrowNarrowLeft />
                     </div>
                     <div ref={nextRef} className="swiper-button-next">
-                    <HiOutlineArrowNarrowRight />
+                        <HiOutlineArrowNarrowRight />
                     </div>
                 </div>
-
             </div>
         </>
     );

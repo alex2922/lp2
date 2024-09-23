@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./About.scss";
 import { FaRegCheckCircle } from "react-icons/fa";
 import lifeIcon from "../../assets/icons/life.gif";
@@ -6,29 +6,43 @@ import sugarIcon from "../../assets/icons/glucose_meter.gif";
 import emotinalIcon from "../../assets/icons/emotional-intelligence.gif";
 import physIcon from "../../assets/icons/phys.gif";
 import Button from "../../comps/button/Button";
+import { MdAccessTime } from "react-icons/md";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 function About() {
-
   const doctorData = [
     {
       image: physIcon,
       name: "General Physician",
-      designation: "OPD Timings: 10am-4pm",
+      designation: "OPD Timings",
+      icon: <MdAccessTime />,
     },
     {
       image: sugarIcon,
       name: "Diabetologist",
-      designation: "OPD Timings: 10am-4pm",
+      designation: "OPD Timings",
+      icon: <MdAccessTime />,
     },
     {
       image: lifeIcon,
       name: "Gynecologist",
-      designation: "OPD Timings: 10am-4pm",
+      designation: "OPD Timings",
+      icon: <MdAccessTime />,
     },
     {
       image: emotinalIcon,
-      name: "Mental Health Counselor",
-      designation: "OPD Timings: 10am-4pm",
+      name: "Psychologist",
+      designation: "OPD Timings",
+      icon: <MdAccessTime />,
     },
   ];
   return (
@@ -51,14 +65,14 @@ function About() {
               of a healthcare ecosystem that transcends barriers of language and
               distance, receiving care in your preferred way.
             </p>
-           <Button text="Book Now" />
+            <Button className="button-about" text="Book Now" />
           </div>
         </div>
       </div>
 
       <div className="parent about-parent about-parent2">
         <div className="container about-container about-container2">
-          <div className="about-left"></div>
+          <div className="about-left bg-img-cover"></div>
           <div className="about-right">
             <h2>AxonCare : Multispeciality Smart Clinic</h2>
             <p>
@@ -80,7 +94,6 @@ function About() {
                 >
                   Global Access
                 </span>
-                {/* Connect with top specialists worldwide. */}
               </p>
             </div>
 
@@ -95,7 +108,6 @@ function About() {
                 >
                   Multilingual Support
                 </span>
-                {/* Communicate in your preferred language. */}
               </p>
             </div>
 
@@ -110,7 +122,6 @@ function About() {
                 >
                   Save Time and Money
                 </span>
-                {/* Convenient appointments, no travel. */}
               </p>
             </div>
 
@@ -125,7 +136,6 @@ function About() {
                 >
                   Seamless Communication
                 </span>
-                {/* Seamless interaction with healthcare providers. */}
               </p>
             </div>
 
@@ -140,7 +150,6 @@ function About() {
                 >
                   Coordinated Care
                 </span>
-                {/* Centralised medical records, personalised support. */}
               </p>
             </div>
             <Button text="Book Now" />
@@ -150,36 +159,79 @@ function About() {
 
       {/* First section ends */}
 
-
       {/* Second section start */}
 
       <div className="card-parent parent">
         <div className="container card-container">
-          {doctorData.map((item, index) => (
-            <div className="card" key={index}>
-              <div className="front">
-                <div className="image">
-                  <div
-                    className="icon"
-                    style={{ backgroundImage: `url(${item.image})` }}
-                  ></div>
+          <Swiper
+            spaceBetween={30}
+            centeredSlides={false}
+            slidesPerView={4}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            navigation={false}
+            modules={[Autoplay, Pagination]}
+            className="mySwiper"
+
+            breakpoints={{
+              300: {
+                slidesPerView: 1,
+                spaceBetween: 100,
+              },
+              400: {
+                slidesPerView: 1,
+                spaceBetween: 100,
+              },
+              650: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+
+              750: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+
+              1100: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+            }}
+          >
+
+            
+            {doctorData.map((item, index) => (
+              <SwiperSlide>
+                <div className="card" key={index}>
+                  <div className="front">
+                    <div className="image">
+                      <div
+                        className="icon"
+                        style={{ backgroundImage: `url(${item.image})` }}
+                      ></div>
+                    </div>
+                    <div className="doctor_name">
+                      <h2>{item.name}</h2>
+                    </div>
+                  </div>
+                  <div className="back">
+                    <span>{item.icon}</span>
+                    <p> {item.designation}</p>
+                    <span className="timeing">10am - 4pm</span>
+                  </div>
                 </div>
-                <div className="doctor_name">
-                  <h2>{item.name}</h2>
-                </div>
-              </div>
-              <div className="back">
-                <p> {item.designation}</p>
-              </div>
-            </div>
-          ))}
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
 
       {/* Second section ends */}
-
-
-
 
       {/* Third section start */}
 
@@ -193,8 +245,8 @@ function About() {
                 <p>
                   {" "}
                   Schedule a consultation with a top specialist in your
-                  preferred field. Select your speciality, choose a
-                  time slot, and book your appointment online.
+                  preferred field. Select your speciality, choose a time slot,
+                  and book your appointment online.
                 </p>
               </div>
               <Button text="Book Now" />
@@ -212,9 +264,9 @@ function About() {
                 <h3> Get a Second Opinion in Seconds</h3>
                 <p>
                   {" "}
-                  Need a second opinion? Upload your
-                  medical records to the AxonCare app and receive a personalized
-                  evaluation from a qualified expert. 
+                  Need a second opinion? Upload your medical records to the
+                  AxonCare app and receive a personalized evaluation from a
+                  qualified expert.
                 </p>
               </div>
               <Button text="Book Now" />
@@ -223,10 +275,7 @@ function About() {
         </div>
       </div>
 
-
       {/* Third section ends */}
-
-
     </>
   );
 }
