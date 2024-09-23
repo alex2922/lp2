@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Autoplay, Pagination } from "swiper/modules";
+import { Autoplay, Pagination,Navigation } from "swiper/modules";
 // icons
 
 const FourCard = (props) => {
@@ -31,11 +31,12 @@ const FourCard = (props) => {
           <Swiper
             slidesPerView={3}
             spaceBetween={30}
-            pagination={{
-              clickable: true,
-            }}
+          
+            navigation={true}
+              
+          
             autoplay={{
-              delay: 2500000000000,
+              delay: 2500,
               disableOnInteraction: false,
             }}
             breakpoints={{
@@ -59,11 +60,11 @@ const FourCard = (props) => {
               },
             }}
             centeredSlides={false}
-            modules={[Pagination, Autoplay]}
+            modules={[Pagination,Navigation, Autoplay]}
             className="mySwiper"
           >
             {props.cardData.map((item, index) => (
-              <SwiperSlide className="cardSlide" data-aos={item.animation}   >
+              <SwiperSlide className="cardSlide"   >
                 <div className="card" key={index}>
                   <img src={item.icon} alt="" />
 
