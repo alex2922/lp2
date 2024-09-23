@@ -3,7 +3,7 @@ import "./contactform.scss";
 import Button from "../button/Button";
 import toast, { Toaster } from "react-hot-toast";
 
-const ContactForm = ({ heading, description, reusing }) => {
+const ContactForm = ({ heading, description, reusing,close }) => {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -37,6 +37,9 @@ const ContactForm = ({ heading, description, reusing }) => {
           setPhone("");
           setEmail("");
           setMessage("");
+          setTimeout(() => {
+            close();
+          }, 1000);
         } else {
           throw new Error("Failed to submit the form.");
         }
@@ -104,8 +107,6 @@ const ContactForm = ({ heading, description, reusing }) => {
           </div>
         </form>
       </div>
-
-      <Toaster position="top-center" reverseOrder={false} />
     </>
   );
 };

@@ -81,11 +81,11 @@ const Header = () => {
 
                   {drop && (
                     <div className="menudropdown">
-                      <Link to="partners" onClick={() => setNav(false)}>Labs and Pharmacies</Link>
-                      <Link  to="partners" onClick={() => setNav(false)}>Corporates</Link>
-                      <Link to="partners" onClick={() => setNav(false)}>Elderly Care</Link>
-                      <Link to="partners" onClick={() => setNav(false)}>Societies</Link>
-                      <Link to="partners" onClick={() => setNav(false)}>Schools</Link>
+                      <a href="/#partners" onClick={() => setNav(false)}>Labs and Pharmacies</a>
+                      <a  href="/#partners" onClick={() => setNav(false)}>Corporates</a>
+                      <a href="/#partners" onClick={() => setNav(false)}>Elderly Care</a>
+                      <a href="/#partners" onClick={() => setNav(false)}>Societies</a>
+                      <a href="/#partners" onClick={() => setNav(false)}>Schools</a>
                     </div>
                   )}
                 </ul>

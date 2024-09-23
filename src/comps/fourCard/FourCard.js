@@ -27,7 +27,7 @@ const FourCard = (props) => {
           <h2>What we offer</h2>
         </div>
 
-        <div className="card-section-container container">
+        <div className="card-section-container container" data-aos="fade-up" >
           <Swiper
             slidesPerView={3}
             spaceBetween={30}

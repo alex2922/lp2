@@ -73,8 +73,8 @@ function Partners() {
   return (
     <>
       <div className="partners parent">
-        <div className="partners-container container" id="five-card">
-          <div className="partners-top" id='partners' data-aos="fade-up" data-aos-delay="300">
+        <div className="partners-container container" id="partners" >
+          <div className="partners-top"  data-aos="fade-up" data-aos-delay="300">
             <span className="section-indicator">AxonCare Partners</span>
             <h2>The Global  AxonCare Network </h2>
             <p>Become a partner in revolutionising healthcare delivery with our tech-powered service, connecting you to the AxonCare network. Our cutting-edge "Anytime Health" kiosk, equipped with point-of-care testing devices, is at the heart of this network, linking healthcare professionals (doctors, labs, pharmacies) with beneficiaries (patients, corporates, elderly care facilities, schools, and residential societies).</p>
