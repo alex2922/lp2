@@ -26,7 +26,8 @@ function BelowHero() {
                             <div className="btn-div">
                                 <Button
                                     text="Book Now
-"                            />
+"      
+href="/contact"                      />
                             </div>
                         </div>
                     </div>
@@ -43,7 +44,7 @@ function BelowHero() {
                             <div className="btn-div">
                                 <Button
                                     text="Book Now
-"                            />
+"      href="/contact"                       />
                             </div>
                         </div>
                     </div>
@@ -57,7 +58,7 @@ function BelowHero() {
                                 global access to top specialists and centralised records
                             </p>
                             <div className="btn-div">
-                                <Button text="Book Now" />
+                                <Button text="Book Now"  href="/contact"/>
                             </div>
                         </div>
                     </div>
@@ -72,7 +73,7 @@ function BelowHero() {
                             </p>
 
                             <div className="btn-div">
-                                <Button text="Book Now" />
+                                <Button text="Book Now"  href="/contact"/>
                             </div>
                         </div>
                     </div>
@@ -111,7 +112,7 @@ function BelowHero() {
                                     <div className="btn-div">
                                         <Button
                                             text="Book Now
-"                            />
+"         href="/contact"                    />
                                     </div>
                                 
                             </div>
@@ -129,7 +130,7 @@ function BelowHero() {
                                     <div className="btn-div">
                                         <Button
                                             text="Book Now
-"                            />
+"                href="/contact"             />
                                     </div>
                                 </div>
                         
@@ -145,7 +146,7 @@ function BelowHero() {
                                         global access to top specialists and centralised records
                                     </p>
                                     <div className="btn-div">
-                                        <Button text="Book Now" />
+                                        <Button text="Book Now" href="/contact" />
                                     </div>
                                 </div>
                             
@@ -162,7 +163,7 @@ function BelowHero() {
                                     </p>
 
                                     <div className="btn-div">
-                                        <Button text="Book Now" />
+                                        <Button text="Book Now" href="/contact" />
                                     </div>
                                 
                             </div>

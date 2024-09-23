@@ -99,15 +99,10 @@
                     z-index: 99;
                     border-radius: 10px;
                     height: auto;
-                    // height: 400px;
-                    padding: calc(var(--unit) / 2);
+                                     padding: calc(var(--unit) / 2);
                     gap: calc(var(--unit) / 2);
                     box-shadow: var(--shadow);
-                    // p:not(.opacity) {
-                    //     font-size: 16px;
-                    //     opacity: 1;
-                    // }
-
+                    
                     p {
                         display: block;
                     }
@@ -121,37 +116,6 @@
     }
 }
 
-// @media only screen and (max-width:500px) {
-
-//     .belowhero {
-//         height: 500px;
-
-//         .belowhero-container {
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             align-items: center;
-//             gap: 10px;
-
-//             .box {
-//                 width: 300px;
-
-
-//                 &:hover {
-//                     height: 300px;
-
-//                 }
-
-//                 .subbox {
-//                     z-index: 99 !important;
-//                     border: 1px solid red;
-
-
-//                 }
-//             }
-//         }
-//     }
-// }
 
 @media only screen and (max-width:800px) {
     .desktop-next {
