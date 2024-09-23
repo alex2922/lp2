@@ -2,6 +2,7 @@ import React from "react";
 import Videosec from "../../comps/videosec/Videosec";
 import doctorVideo from "../../assets/videos/doctor_video.webm"
 import Partners from "../../comps/partners/Partners";
+import FourCard from "../../comps/fourCard/FourCard";
 function Home() {
   return (
     <div>
@@ -13,7 +14,7 @@ function Home() {
 
         videoSource={doctorVideo}
       />
-
+<FourCard/>
       <Partners/>
     </div>
 
