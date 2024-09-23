@@ -71,7 +71,7 @@ function Home() {
   ];
   return (
     <div>
-      {/* <Herosection /> */}
+      <Herosection />
       <About_sec/>
 
       
