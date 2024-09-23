@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState ,useCallback } from "react";
 import { Link } from "react-router-dom";
 import { RiMenu3Line } from "react-icons/ri";
 import "./header.scss";
@@ -12,6 +12,27 @@ import 'aos/dist/aos.css';
 const Header = () => {
   const [nav, setNav] = useState(false);
   const [drop, setDrop] = useState(false);
+  const handleScroll = useCallback(() => {
+    if (nav) {
+      setNav(false);
+    }
+  }, [nav]);
+
+
+
+  useEffect(() => {
+    if (nav) {
+      window.addEventListener("scroll", handleScroll);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [nav, handleScroll]);
+
+
+
+
 useEffect(()=>{
     AOS.init();
 })
@@ -71,6 +92,9 @@ useEffect(()=>{
                     <p>3911 Concord Pike #8030, Wilmington, Delaware, 19803</p>
                   </a>
                 </div>
+              </div>
+              <div className="clickarea" onClick={() => setNav(false)}>
+
               </div>
             </div>
           )}
