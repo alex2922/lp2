@@ -79,6 +79,7 @@
 @media only screen and (max-width:500px){
     .herosection-parent .slide .slide-text-container .slide-heading{
         font-size: 22px !important;
+        max-width: 18ch;
     }
 
     .swiper-button-next:after,.swiper-button-prev:after{
