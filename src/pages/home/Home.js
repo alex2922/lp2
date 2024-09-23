@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
+import Videosec from "../../comps/videosec/Videosec";
+import Herosection from '../../comps/hero/Herosection'
 
 function Home() {
   return (
-    <div>
-      
-    </div>
+    <>
+
+<Herosection/>
+    </>
   )
 }
 
-export default Home
+export default Home;
