@@ -11,10 +11,9 @@ const About_sec = (props) => {
             <div className="mob-img bg-img-cover"></div>
           </div>
           <div className="about-right">
-            <h1 className="heading">
-              {" "}
+            <h2 className="heading">
               About <span>Axoncare</span>
-            </h1>
+            </h2>
             <p className="desc">
               AxonCare, a service brand by Axonic, is a global healthcare
               network that connects doctors and patients worldwide through
