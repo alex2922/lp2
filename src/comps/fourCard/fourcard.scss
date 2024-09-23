@@ -101,11 +101,11 @@
 
 @media only screen and (max-width: 780px) {
   .card-section-parent {
-    padding: var(--unit) !important;
+    padding: var(--unit) ;
   }
 
   .card-section-container {
-    padding: var(--unit) !important;
+    padding: var(--unit) ;
   }
 }
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -117,4 +117,19 @@
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   background-color: var(--accent-yellow);
+}
+
+
+@media only screen and (max-width: 600px){
+
+  .card-section-parent{
+    padding: var(--unit) 0px !important;
+  }
+  .card-section-container {
+    padding: var(--unit) 0px !important;
+
+    .mySwiper{
+      padding: calc(var(--unit)/2) !important;
+    }
+  }
 }
