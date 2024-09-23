@@ -23,10 +23,10 @@ const About_sec = () => {
           </div>
           <div className="right">
 
-            <h2 className="heading" data-aos="fade-up" data-aos-delay="200">
+            <h2 className="heading" data-aos="fade-up" data-aos-delay="200" id="example-anchor">
               About <span>Axoncare</span>
             </h2>
-            <p className="desc" data-aos="fade-up" data-aos-delay="400">
+            <p className="desc" data-aos="fade-up" data-aos-delay="400" data-aos-anchor="#example-anchor">
               AxonCare, a service brand by Axonic, is a global healthcare
               network that connects doctors and patients worldwide through
               cutting-edge technology solutions. By integrating the healthcare
@@ -41,6 +41,7 @@ const About_sec = () => {
               className="buton-a"
               data-aos="fade-up"
               data-aos-delay="600"
+              data-aos-anchor="#example-anchor"
             >
               <Button text="Know More" href="/contact" />
             </div>
