@@ -39,7 +39,7 @@ function Contact() {
                 <IoLocationOutline />
               </span>{" "}
               <div className="contact-info">
-                <div className="heading custom-heading">
+                <div className="heading custom-heading2">
                   California Office :{" "}
                 </div>
                 <p>505 Cento Ct, Pleasanton, CA 94566​</p>
@@ -50,7 +50,7 @@ function Contact() {
                 <IoLocationOutline />
               </span>{" "}
               <div className="contact-info">
-                <div className="heading custom-heading">Delaware Office : </div>
+                <div className="heading custom-heading2">Delaware Office : </div>
                 <p>3911 Concord Pike #8030,<br/> Wilmington, Delaware,19803</p>
               </div>
             </a>
@@ -101,7 +101,7 @@ function Contact() {
                 <IoLocationOutline />
               </span>{" "}
               <a href="https://maps.app.goo.gl/aScSECScUZRB3GLL7" className="contact-info" target="__blank">
-                <div className="heading custom-heading">
+                <div className="heading custom-heading2">
                   Development Centre Pune :{" "}
                 </div>
                 <p>
