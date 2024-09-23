@@ -12,19 +12,23 @@ function Contact() {
   return (
     <div className="contact-parent parent">
       <div className="contact-container container">
-        <div className="contact-left contact-body">
+        <div className="contact-left contact-body" data-aos-delay="300" data-aos="fade-up">
           {/* card 1 */}
-          <div className="contact-card" data-aos="fade-up" data-aos-delay="300">
-            <div className="heading custom-heading">Dubai Office :</div>
-            <div className="contact-card-box">
-              <span>
-                <IoLocationOutline />
-              </span>{" "}
-              <div className="contact-info">
-                <div className="heading custom-heading">Delaware Office : </div>
-                <p>3911 Concord Pike #8030, Wilmington, Delaware,19803</p>
-              </div>
+          <div className="contact-card" >
+            <div className="flag-box">
+              <div className="flag-content">Dubai</div>
+              <div className="flag bg-img-cover dubai"></div>
             </div>
+
+            <div className="heading custom-heading">Dubai Office :</div>
+            <a href="tell:+1 408 693 6337​" className="contact-card-box">
+              <span>
+                <IoCallOutline />
+              </span>{" "}
+              <div  className="contact-info">
+                <p>Phone no. : +1 408 693 6337​</p>
+              </div>
+            </a>
             <div className="contact-card-box">
               <span>
                 <IoLocationOutline />
@@ -38,17 +42,30 @@ function Contact() {
             </div>
             <div className="contact-card-box">
               <span>
-                <IoCallOutline />
+                <IoLocationOutline />
               </span>{" "}
               <div className="contact-info">
-                <p>Phone no. : +1 408 693 6337​</p>
+                <div className="heading custom-heading">Delaware Office : </div>
+                <p>3911 Concord Pike #8030,<br/> Wilmington, Delaware,19803</p>
               </div>
             </div>
           </div>
 
           {/* card 2 */}
-          <div className="contact-card" data-aos="fade-up" data-aos-delay="400">
+          <div className="contact-card" >
+          <div className="flag-box">
+              <div className="flag-content">UK</div>
+              <div className="flag bg-img-cover uk"></div>
+            </div>
             <div className="heading custom-heading">UK Office :</div>
+            <a href="tell:+1 408 693 6337" className="contact-card-box">
+              <span>
+                <IoCallOutline />
+              </span>{" "}
+              <div className="contact-info">
+                <p>Phone no. : +1 408 693 6337​</p>
+              </div>
+            </a>
             <div className="contact-card-box">
               <span>
                 <IoLocationOutline />
@@ -57,19 +74,23 @@ function Contact() {
                 <p>20 Langland Drive, Pinner HA54SA​</p>
               </div>
             </div>
-            <div className="contact-card-box">
+          </div>
+
+          {/* card 3 */}
+          <div className="contact-card" >
+          <div className="flag-box">
+              <div className="flag-content">India</div>
+              <div className="flag bg-img-cover india"></div>
+            </div>
+            <div className="heading custom-heading">India Office :</div>
+            <a href="tell:+91 8298290078​" className="contact-card-box">
               <span>
                 <IoCallOutline />
               </span>{" "}
               <div className="contact-info">
-                <p>Phone no. : +1 408 693 6337​</p>
+                <p>Phone no : +91 8298290078​</p>
               </div>
-            </div>
-          </div>
-
-          {/* card 3 */}
-          <div className="contact-card" data-aos="fade-up" data-aos-delay="500">
-            <div className="heading custom-heading">India Office :</div>
+            </a>
             <div className="contact-card-box">
               <span>
                 <IoLocationOutline />
@@ -79,42 +100,31 @@ function Contact() {
                   Development Centre Pune :{" "}
                 </div>
                 <p>
-                  403, 4th Floor, Kapil Zenith IT Park, Bavdhan,Pune 411021​
+                  403, 4th Floor, Kapil Zenith IT Park, <br/> Bavdhan,Pune 411021​
                 </p>
-              </div>
-            </div>
-            <div className="contact-card-box">
-              <span>
-                <IoCallOutline />
-              </span>{" "}
-              <div className="contact-info">
-                <p>Phone no : +91 8298290078​</p>
               </div>
             </div>
           </div>
         </div>
-        <div className="contact-right contact-body">
-          <div data-aos-delay="300"
-          data-aos="fade-up">
-          <ContactForm
-            heading="We’d Love To Hear From You"
-            description="Interested in partnering with a leading healthcare innovator? Join the AxonCare network."
-          />
+        <div className="contact-right contact-body" data-aos-delay="300" data-aos="fade-up">
+          <div >
+            <ContactForm
+              heading="We’d Love To Hear From You"
+              description="Interested in partnering with a leading healthcare innovator? Join the AxonCare network."
+            />
           </div>
-       
+
           {/*  */}
-          <div className="contact-card" data-aos-delay="400"
-          data-aos="fade-up">
-            <div className="contact-card-box">
+          <div className="contact-card">
+            <a href="mailto:info@axoncare.com" className="contact-card-box">
               <span>
-              <MdOutlineMail />
+                <MdOutlineMail />
               </span>{" "}
               <div className="contact-info">
-                <p>
-                info@axoncare.com
-                </p>
+              <div className="heading custom-heading">Email :</div>
+                <p>info@axoncare.com</p>
               </div>
-            </div>
+            </a>
           </div>
           {/*  */}
         </div>
