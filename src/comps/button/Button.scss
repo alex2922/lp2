@@ -1,0 +1,90 @@
+.btn,
+.btn *,
+.btn :after,
+.btn :before,
+.btn:after,
+.btn:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+
+.btn {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: var(--accent-blue);
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 50%;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  font-family: "nexa-bold";
+  width: fit-content;
+}
+
+.btn:disabled {
+  cursor: default;
+}
+
+.btn:-moz-focusring {
+  outline: auto;
+}
+
+.btn svg {
+  display: block;
+  vertical-align: middle;
+}
+
+.btn [hidden] {
+  display: none;
+}
+
+.btn {
+
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 0.8rem 2rem 0.7rem 2rem;
+  position: relative;
+  // text-transform: uppercase;
+}
+
+.btn .original {
+  background: var(--accent-yellow);
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+  font-family: "nexa-bold";
+  font-size:1rem;
+  padding: 0.45rem 2rem 0.4rem 2rem;
+}
+
+.btn:hover .original {
+  transform: translateY(110%);
+}
+
+.btn .letters {
+  display: inline-flex;
+}
+
+.btn span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+  font-size:1rem;
+}
+
+.btn span:nth-child(2n) {
+  transform: translateY(15px);
+}
+
+.btn:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}

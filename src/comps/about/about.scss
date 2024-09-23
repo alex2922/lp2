@@ -1,0 +1,37 @@
+.about-parent {
+  margin-top: 20px;
+  height: 500px;
+  .about-container {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(var(--unit) / 2);
+    box-shadow: var(--shadow);
+    .about-left {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: yellow;
+      position: relative;
+      top: 0;
+      left: 0;
+      height: 100%;
+
+      .mob-img {
+        width: 250px;
+        height: 100%;
+        background: url("https://img.freepik.com/free-photo/smartphone-nature-concept_23-2150246099.jpg?t=st=1727073722~exp=1727077322~hmac=302dfb4bed5c94145bc7aae23f98e8ea2345978b61ba27b0bd6ad739b016abb7&w=740");
+        border-radius: 10px;
+        position: absolute;
+        top: -20px;
+        right: 0;
+      }
+    }
+    .about-right {
+      width: 50%;
+      background: red;
+    }
+  }
+}
