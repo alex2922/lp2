@@ -1,7 +1,7 @@
-.about-parent {
+.aboutsec-parent {
   padding: 50px 0px;
   height: 500px;
-  .about-container {
+  .aboutsec-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,9 +29,46 @@
     }
     .about-right {
       width: 70%;
+      display:flex;
+      flex-direction: column;
+      gap:calc(var(--unit) /2);
+      transition: var(--trans);
       .desc {
         text-align: justify;
       }
     }
   }
+}
+@media only screen and (max-width:1200px){
+    .aboutsec-parent{
+        .aboutsec-container{
+            margin:0px 10px;
+        }
+    }
+}
+@media only screen and (max-width:800px){
+    .aboutsec-parent{
+        height:800px;
+        
+        .aboutsec-container{
+            flex-direction: column;
+            .about-left{
+
+            }
+            .about-right{
+                width:100%;
+                align-items: center;
+                justify-content: center;
+                padding-bottom:20px;
+                .desc{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:500px){
+    .aboutsec-parent{
+        height:900px;
+    }
 }

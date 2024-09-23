@@ -1,21 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.scss";
 import Button from "../button/Button";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-const About_sec = (props) => {
+const About_sec = () => {
+  useEffect(()=>{
+    AOS.init();
+  })
   return (
     <>
-      <div className="about-parent parent">
-        <div className="about-container container">
+      <div className="aboutsec-parent parent">
+        <div className="aboutsec-container container">
           <div className="about-left">
-            <div className="mob-img bg-img-cover"></div>
+            <div className="mob-img bg-img-cover" data-aos="fade-down" data-aos-delay="200"></div>
           </div>
           <div className="about-right">
-            <h1 className="heading">
-              {" "}
+            <h2 className="heading" data-aos="fade-down" data-aos-delay="200">
               About <span>Axoncare</span>
-            </h1>
-            <p className="desc">
+            </h2>
+            <p className="desc" data-aos="fade-down" data-aos-delay="400">
               AxonCare, a service brand by Axonic, is a global healthcare
               network that connects doctors and patients worldwide through
               cutting-edge technology solutions. By integrating the healthcare
@@ -26,7 +30,10 @@ const About_sec = (props) => {
               overcome barriers of language and geography, receiving care in the
               way that suits you best.
             </p>
-            <Button text={props.btn_text} href={props.link} />
+            <div className="buton-a"data-aos="fade-down" data-aos-delay="600">
+            <Button text="Know More" href="/contact"  />
+            </div>
+            
           </div>
         </div>
       </div>
