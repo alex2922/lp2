@@ -12,7 +12,7 @@ import { useEffect, useState } from "react";
 
 
 function App() {
-  const [toggle, setToggle] = useState(false);
+  const [toggle, setToggle] = useState(true);
   useEffect(() => {
     setTimeout(() => {
       setToggle(true)
