@@ -5,7 +5,7 @@ import Partners from "../../comps/partners/Partners";
 import FourCard from "../../comps/fourCard/FourCard";
 // import Herosection from "../../comps/hero/Herosection";
 import doctorVideo from "../../assets/videos/doctor_video.webm"
-
+// import doctorVideo from "../../assets/videos/doctor_video.webm";
 import Herosection from "../../comps/hero/Herosection";
 // icons
 import optpmetrist from "../../assets/icons/optometrist.gif";
