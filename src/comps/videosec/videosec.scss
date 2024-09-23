@@ -71,10 +71,16 @@
   .VideoSec-container {
     gap: calc(var(--unit)) !important;
     padding: calc(var(--unit)/2) !important ;
+    flex-direction: column !important;
 
 
     .right {
+      width: 100% !important;
       gap: calc(var(--unit) / 2) !important;
+    }
+
+    .left{
+      width: 100% !important;
     }
   }
 }

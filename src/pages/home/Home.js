@@ -41,7 +41,7 @@ function Home() {
   const cardData2 = [
     {
       icon: admin,
-      heading: "No Admins, No Overheads – Just Patient Care",
+      heading: "No Admins, No Overheads – Just Care",
       desc: "With AxonCare’s AI-powered practice management, you can focus solely on patient care, while we handle all administrative tasks, allowing you to work on your terms and enjoy a balanced life. ",
       btn_text: " Join AxonCare Network  ",
       href_link: "/",

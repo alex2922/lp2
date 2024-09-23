@@ -16,6 +16,10 @@ const FourCard = (props) => {
   return (
     <>
       <div className="card-section-parent parent">
+        <div className="heading-container container">
+          <h2>What we offer</h2>
+        </div>
+
         <div className="card-section-container container">
           <Swiper
             slidesPerView={3}
