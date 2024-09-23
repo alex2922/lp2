@@ -92,6 +92,7 @@
         align-items: center;
         gap: var(--unit);
         padding: calc(var(--unit)*3) calc(var(--unit)/2);
+      
 
         .card {
             width: calc(var(--width) / 5);
@@ -102,6 +103,7 @@
             overflow: hidden;
             box-shadow: var(--shadow);
             border-radius: calc(var(--unit)/2);
+           
 
             .front {
                 height: 100%;
@@ -184,7 +186,7 @@
 
     .swiper-horizontal>.swiper-pagination-bullets,
     .swiper-pagination-bullets.swiper-pagination-horizontal {
-        top: 87% !important;
+        top: 92% !important;
     }
 }
 
@@ -323,8 +325,8 @@
 
 @media (max-width:500px) {
     .card-container {
-        // padding: calc(var(--unit)*2) calc(var(--unit)/2) !important;
-        padding: 0px !important;
+        padding: calc(var(--unit)) calc(var(--unit)/2) !important;
+        // padding: 0px !important;
     }
 }
 
@@ -360,6 +362,15 @@
     .dr-parent {
         &.dr-parent2 {
             padding: calc(var(--unit)) 20px;
+        }
+
+        .dr-container {
+
+            .text{
+                text-align: center;
+                align-items: center;
+               
+            }
         }
 
     }
