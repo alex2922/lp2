@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import "./Contact.scss";
+import "./contact.scss";
 import ContactForm from "../../comps/contactcomp/ContactForm";
 import { MdOutlineMail } from "react-icons/md";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";

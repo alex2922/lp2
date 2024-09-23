@@ -12,7 +12,7 @@ function Flipcard(props) {
         <p>{props.desc}</p>
 
         <div className="button">
-          <Button text={props.btn_text} blank={true} href={props.btn_link} />
+          <Button text={props.btn_text}  href={props.btn_link} />
         </div>
       </div>
     </div>
