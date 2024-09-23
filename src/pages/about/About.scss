@@ -173,6 +173,10 @@
     .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
         background-color: var(--accent-yellow);
     }
+
+    .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+        top: 87% !important;
+    }
 }
 
 // third section
