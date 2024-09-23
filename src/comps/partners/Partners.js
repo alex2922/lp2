@@ -4,12 +4,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
+
 import 'swiper/css/navigation';
 
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay,  Navigation } from 'swiper/modules';
 
 import "../../comps/partners/Partners.scss";
 import Button from '../button/Button';
@@ -141,6 +141,76 @@ function Partners() {
 
 
           </div>
+
+
+          {/* for mobile and tab device */}
+          <Swiper
+        cssMode={true}
+        navigation={true}
+
+        // mousewheel={true}
+        // keyboard={true}
+        modules={[Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>  <div className="pleft">
+              <div className="partner-c1">
+                <Flipcard
+                  heading={flipCardData[0].heading}
+                  desc={flipCardData[0].desc}
+                  btn_text={flipCardData[0].btn}
+                  btn_link={flipCardData[0].btn_link}
+                  img={flipCardData[0].img}
+
+                />
+              </div>
+              <div className="partner-c2">
+                <Flipcard
+                  heading={flipCardData[1].heading}
+                  desc={flipCardData[1].desc}
+                  btn_text={flipCardData[1].btn}
+                  btn_link={flipCardData[1].btn_link}
+                  img={flipCardData[1].img}
+
+                />
+              </div>
+            </div></SwiperSlide>
+        <SwiperSlide><div className="pmiddle">
+              <div className="partner-c3">
+                <Flipcard
+                  heading={flipCardData[2].heading}
+                  desc={flipCardData[2].desc}
+                  btn_text={flipCardData[2].btn}
+                  btn_link={flipCardData[2].btn_link}
+                  img={flipCardData[2].img}
+
+                />
+              </div>
+            </div></SwiperSlide>
+        <SwiperSlide> <div className="pright">
+              <div className="partner-c4">
+                <Flipcard
+                  heading={flipCardData[3].heading}
+                  desc={flipCardData[3].desc}
+                  btn_text={flipCardData[3].btn}
+                  btn_link={flipCardData[3].btn_link}
+                  img={flipCardData[3].img}
+
+                />
+              </div>
+              <div className="partner-c5">
+                <Flipcard
+                  heading={flipCardData[4].heading}
+                  desc={flipCardData[4].desc}
+                  btn_text={flipCardData[4].btn}
+                  btn_link={flipCardData[4].btn_link}
+                  img={flipCardData[4].img}
+
+                />
+              </div>
+            </div></SwiperSlide>
+
+      </Swiper>
 
 
 

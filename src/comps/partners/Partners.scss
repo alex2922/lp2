@@ -1,76 +1,177 @@
-.partners{
+.partners {
     padding: calc(var(--unit)*2) 0px;
+    background-color: var(--grey);
 
-    .partners-top{
+    .partners-top {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: calc(var(--unit)/2);
-        
+
     }
-    .partners-bottom{
+
+    .partners-bottom {
         margin: calc(var(--unit)*2) 0px;
         height: 700px;
-        width: 100%;        
+        width: 100%;
         display: flex;
         gap: calc(var(--unit)/2);
-        
-       
 
-        .pleft{
+
+
+        .pleft {
             height: 100%;
-            width: 33.33%;            
+            width: 33.33%;
             display: flex;
             flex-direction: column;
             gap: calc(var(--unit)/2);
 
-            .partner-c1{
+            .partner-c1 {
                 height: 50%;
                 width: 100%;
             }
-            .partner-c2{
+
+            .partner-c2 {
                 height: 50%;
                 width: 100%;
             }
-            
+
 
         }
-        .pmiddle{
+
+        .pmiddle {
             height: 100%;
             width: 33.33%;
-            
 
-            .partner-c3{
+
+            .partner-c3 {
                 height: 100%;
                 width: 100%;
             }
 
         }
-        }
-        .pright{
+
+        .pright {
             height: 100%;
-            width: 33.33%;            
+            width: 33.33%;
             display: flex;
             flex-direction: column;
             gap: calc(var(--unit)/2);
 
-            .partner-c4{
+            .partner-c4 {
                 height: 50%;
                 width: 100%;
-                
+
             }
-            .partner-c5{
+
+            .partner-c5 {
                 height: 50%;
                 width: 100%;
-                
+
             }
 
         }
+
     }
-  
- 
-
+    @media only screen and (max-width:1000px){
+        .partners-bottom{
+            display: none !important;
+        }
+    }
    
+    .swiper {
+        width: 100%;
+        height: 100%;
+        .swiper-wrapper{
+            height:500px;
+            width:100%;
+        }
+        .swiper-button-next, .swiper-button-prev{
+            background-color: var(--accent-yellow) !important;
+            color: var(--accent-blue);
+            font-size: 20px !important;
+            padding: 30px !important;
+            border-radius: 100px;
+    
+        }
+        
+        .swiper-slide {
+            padding:50px 0px;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+          
+            /* Center slide text vertically */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+           
+    
+            .pleft{
+                height: 100%;
+                width: 100%;            
+                display: flex;
+                flex-direction: column;
+                gap: calc(var(--unit)/2);
+    
+                .partner-c1{
+                    height: 50%;
+                    width: 100%;
+                }
+                .partner-c2{
+                    height: 50%;
+                    width: 100%;
+                }
+                
+    
+            }
+            .pmiddle {
+                height: 100%;
+                width: 100%;
+    
+    
+                .partner-c3 {
+                    height: 100%;
+                    width: 100%;
+                }
+    
+            }
+    
+            .pright {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: calc(var(--unit)/2);
+    
+                .partner-c4 {
+                    height: 50%;
+                    width: 100%;
+    
+                }
+    
+                .partner-c5 {
+                    height: 50%;
+                    width: 100%;
+    
+                }
+    
+            }
+
+          }
+      }
+      
+      
+
+      @media only screen and (min-width:1000px){
+        .swiper{
+            display: none;
+        }
+      }
 
 
+
+
+}
