@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Contact.scss";
 import ContactForm from "../../comps/contactcomp/ContactForm";
 import { MdOutlineMail } from "react-icons/md";
