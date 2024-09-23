@@ -1,0 +1,86 @@
+.heronext-parent {
+    margin-top: -80px;
+    //    height: 200px;
+    position: relative;
+    z-index: 2;
+    padding-bottom: 50px;
+
+    .heronext-container {
+        display: flex;
+        box-shadow: 0px 0px 10px rgb(167, 164, 164);
+        border-radius: calc(var(--unit) / 4);
+        background: var(--white);
+
+        .box {
+
+            width: calc(100% / 4);
+            border-right: 1px solid gray;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: calc(var(--unit) / 2);
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            .icon {
+                height: 70px;
+                width: 50px;
+                filter: hue-rotate(225deg) brightness(1.2);
+            }
+
+            .box-heading {
+                text-align: center;
+            }
+
+            .box-p {
+                display: none;
+                text-align: center;
+            }
+
+            .btn-div {
+                display: none;
+                margin-top: calc(var(--unit) /2);
+            }
+
+            .icon1 {
+                background: url('../../assets/icons/patient.gif');
+            }
+
+            .icon2 {
+                background: url('../../assets/icons/doctor.gif');
+            }
+
+            .icon3 {
+                background: url('../../assets/icons/clinic.gif');
+            }
+
+            .icon4 {
+                background: url('../../assets/icons/handshake.gif');
+            }
+
+            &:last-child {
+                border: none;
+            }
+
+            &:hover {
+
+                box-shadow: 0px 0px 10px rgb(167, 164, 164);
+                border-radius: calc(var(--unit) / 4);
+
+                .box-p {
+                    display: block;
+                }
+
+                .btn-div {
+                    display: block;
+                }
+            }
+
+            &::after {
+                position: absolute;
+            }
+        }
+    }
+
+}

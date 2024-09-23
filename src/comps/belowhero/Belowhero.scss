@@ -1,0 +1,151 @@
+.belowhero {
+    height: 200px;
+    margin-top: -100px;
+    z-index: 10;
+    position: relative;
+    margin-bottom: 50px;
+    // pad
+
+    .belowhero-container {
+        background: var(--white);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        box-shadow: var(--shadow);
+        padding: 0px;
+
+
+        .box {
+            height: 70%;
+            width: calc(100% / 4);
+            border-right: 1px solid rgba(0, 0, 0, 0.283);
+            background: rgba(255, 0, 0, 0.178);
+            position: relative;
+            transition: var(--trans);
+
+
+            &:last-child {
+                border: none;
+            }
+
+            .subbox {
+                height: 100%;
+                width: 100%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: var(--unit);
+                background: var(--white);
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                transition: var(--trans);
+
+                .icon {
+                    height: 70px;
+                    width: 50px;
+                    filter: hue-rotate(225deg) brightness(1.2);
+                }
+
+                // p:not(.opacity) {
+
+                //     opacity: 0;
+                //     transition: var(--trans);
+                //     position: absolute;
+                //     top: 40px;
+                //     text-align: center;
+
+                // }
+                // p.opacity{
+                //     opacity: 0;
+                //     text-align: center;
+                // }
+                p {
+                    display: none;
+                    text-align: center;
+                }
+
+                .icon1 {
+                    background: url('../../assets/icons/patient.gif');
+                }
+
+                .icon2 {
+                    background: url('../../assets/icons/doctor.gif');
+                }
+
+                .icon3 {
+                    background: url('../../assets/icons/clinic.gif');
+                }
+
+                .icon4 {
+                    background: url('../../assets/icons/handshake.gif');
+                }
+
+                .btn-div {
+                    display: none;
+                }
+            }
+
+            &:hover {
+                .subbox {
+                    border-radius: 10px;
+                    height: auto;
+                    padding: calc(var(--unit) / 2);
+                    gap: calc(var(--unit) / 2);
+                    box-shadow: var(--shadow);
+
+                    // p:not(.opacity) {
+                    //     font-size: 16px;
+                    //     opacity: 1;
+                    // }
+
+                    p {
+                        display: block;
+                    }
+
+                    .btn-div {
+                        display: block;
+                    }
+
+
+                }
+
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width:900px) {
+
+    .belowhero {
+        // height: 500px;
+
+        .belowhero-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .box {
+                width: 300px;
+                // position: relative;
+                &:hover {
+                    height: 300px;
+                    // position: absolute;
+                }
+                .subbox {
+                    // box-shadow: var(--shadow);
+                    // height: 300px;
+                    z-index: 99 !important;
+                    border: 1px solid red;
+
+                   
+                }
+            }
+        }
+    }
+}

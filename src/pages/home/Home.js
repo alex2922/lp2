@@ -3,10 +3,11 @@ import Videosec from "../../comps/videosec/Videosec";
 import doctorVideo from "../../assets/videos/doctor_video.webm"
 import Partners from "../../comps/partners/Partners";
 import FourCard from "../../comps/fourCard/FourCard";
+import Herosection from "../../comps/hero/Herosection";
 function Home() {
   return (
     <div>
-      
+      <Herosection/>
       <Videosec
         heading="For Patients "
         highlight=" 24/7 Care Anytime, Anywhere"
