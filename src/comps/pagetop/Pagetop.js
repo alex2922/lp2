@@ -12,8 +12,8 @@ function Pagetop(props) {
       <div className="container pagetop-container">
         <div className="rotor-box">
           <div className="rotor">
-            {/* <h3>{props.text}</h3> */}
-            <h3>Welcome</h3>
+            <h3>{props.text}</h3>
+            
           </div>
         </div>
       </div>
