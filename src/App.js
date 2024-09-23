@@ -13,12 +13,12 @@ import { Toaster } from "react-hot-toast";
 
 
 function App() {
-  const [toggle, setToggle] = useState(true);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setToggle(true)
-  //   }, 2000);
-  // }, []);
+  const [toggle, setToggle] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setToggle(true)
+    }, 2000);
+  }, []);
   return (
     <div className="App">
       <BrowserRouter>
