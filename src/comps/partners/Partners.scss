@@ -81,6 +81,7 @@
     @media only screen and (max-width:1000px){
         .partners-bottom{
             display: none !important;
+            height: 1000px !important ;
         }
     }
    
@@ -106,6 +107,7 @@
             text-align: center;
             font-size: 18px;
             background:var(--grey) ;
+            height: 800px !important;
           
             /* Center slide text vertically */
             display: flex;
@@ -176,7 +178,10 @@
         }
       }
 
+     
+
+      }
 
 
 
-}
+
