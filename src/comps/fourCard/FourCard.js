@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./fourcard.scss";
 import twentyfourseven from "../../assets/icons/24-7.gif";
 import Button from "../button/Button";
-
+import Aos from "aos";
+import "aos/dist/aos.css";
 // swiper
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,6 +14,9 @@ import { Autoplay, Pagination } from "swiper/modules";
 // icons
 
 const FourCard = (props) => {
+  useEffect(function () {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
     <>
       <div className="card-section-parent parent">
@@ -56,7 +60,7 @@ const FourCard = (props) => {
             className="mySwiper"
           >
             {props.cardData.map((item, index) => (
-              <SwiperSlide className="cardSlide">
+              <SwiperSlide className="cardSlide" data-aos={item.animation}   >
                 <div className="card" key={index}>
                   <img src={item.icon} alt="" />
 
