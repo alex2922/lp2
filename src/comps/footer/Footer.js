@@ -23,16 +23,16 @@ const Footer = () => {
           <div className="links-box-container footer-box">
             <h2 className="heading">Links</h2>
             <div className="links-box">
-              <Link to="/">Home</Link>
-              <Link to="/about">About</Link>
-              <Link to="/contactUS">Contact Us</Link>
+              <Link to="/" className="link">Home</Link>
+              <Link to="/about" className="link">About</Link>
+              <Link to="/contactUS" className="link">Contact Us</Link>
             </div>
           </div>
           <div className="legals-box-container footer-box">
             <h2 className="heading">Legals</h2>
             <div className="legals-box">
-              <Link>Privacy & Policy</Link>
-              <Link>Terms & Conditions</Link>
+              <Link to="privacy&policy" className="link">Privacy & Policy</Link>
+              <Link to="terms&conditions" className="link">Terms & Conditions</Link>
             </div>
           </div>
           <div className="address-box-container footer-box">
