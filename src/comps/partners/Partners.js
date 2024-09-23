@@ -4,9 +4,9 @@ import Button from '../button/Button';
 import Flipcard from '../flipcard/Flipcard';
 import img1 from "../../assets/Grid/lab.jpg"
 import img2 from "../../assets/Grid/corporate.jpg"
-import img3 from "../../assets/Grid/lab.jpg"
-import img4 from "../../assets/Grid/lab.jpg"
-import img5 from "../../assets/Grid/lab.jpg"
+import img3 from "../../assets/Grid/Residencial.jpg"
+import img4 from "../../assets/Grid/elderly.jpg"
+import img5 from "../../assets/Grid/school.jpg"
 
 const cardData = [
   { title: 'Labs and Pharmacies', imageUrl: '/path-to-lab-image.jpg' },
@@ -36,19 +36,19 @@ const flipCardData = [
     desc:"AxonCare brings world-class healthcare to your doorstep. Avoid long trips to specialist clinics by setting up an AxonCare clinic within your society, providing easy access to specialists and offering consultations, prescriptions, and more—all through the AxonCare app.",
     btn:"Enquire Now",
     btn_link:"/contact",
-    img:"",
+    img:img3,
   },{
     heading: "Elderly Care Facilities",
     desc:"Reduce frequent hospital visits for elderly residents by setting up an AxonCare clinic within your facility. Offer daily health monitoring (glucose levels, ECGs), instant access to specialists, and real-time health insights for family members—delivering convenient, continuous care.",
     btn:"Enquire Now",
     btn_link:"/contact",
-    img:"",
+    img:img4,
   },{
     heading: "School Health",
     desc:"Monitor the health of your students from a young age with an AxonCare clinic on your school premises. Early detection of potential health issues ensures better physical and mental development, giving both students and parents peace of mind with real-time health insights.",
     btn:"Enquire Now",
     btn_link:"/contact",
-    img:"",
+    img:img5,
   }
 ]
 
@@ -93,11 +93,11 @@ function Partners() {
             <div className="pmiddle">
               <div className="partner-c3">
               <Flipcard 
-            heading = {flipCardData[0].heading}
-            desc={flipCardData[0].desc}
-            btn_text={flipCardData[0].btn}
-            btn_link={flipCardData[0].btn_link}
-            img = {flipCardData[0].img}
+            heading = {flipCardData[2].heading}
+            desc={flipCardData[2].desc}
+            btn_text={flipCardData[2].btn}
+            btn_link={flipCardData[2].btn_link}
+            img = {flipCardData[2].img}
             
             />
               </div>
@@ -105,21 +105,21 @@ function Partners() {
             <div className="pright">
               <div className="partner-c4">
               <Flipcard 
-            heading = {flipCardData[0].heading}
-            desc={flipCardData[0].desc}
-            btn_text={flipCardData[0].btn}
-            btn_link={flipCardData[0].btn_link}
-            img = {flipCardData[0].img}
+            heading = {flipCardData[3].heading}
+            desc={flipCardData[3].desc}
+            btn_text={flipCardData[3].btn}
+            btn_link={flipCardData[3].btn_link}
+            img = {flipCardData[3].img}
             
             />
               </div>
               <div className="partner-c5">
               <Flipcard 
-            heading = {flipCardData[0].heading}
-            desc={flipCardData[0].desc}
-            btn_text={flipCardData[0].btn}
-            btn_link={flipCardData[0].btn_link}
-            img = {flipCardData[0].img}
+            heading = {flipCardData[4].heading}
+            desc={flipCardData[4].desc}
+            btn_text={flipCardData[4].btn}
+            btn_link={flipCardData[4].btn_link}
+            img = {flipCardData[4].img}
             
             />
               </div>

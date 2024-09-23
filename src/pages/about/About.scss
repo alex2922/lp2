@@ -4,7 +4,6 @@
     &.about-parent2 {
         background: #f4f4f4;
         padding: calc(var(--unit)*3) 0px;
-
     }
 
     .about-container {
@@ -12,15 +11,12 @@
         align-items: stretch;
         justify-content: center;
         gap: calc(var(--unit));
-        padding: calc(var(--unit)*3) 0px;
-
-
-
+        padding: calc(var(--unit)*3) calc(var(--unit));
 
         .about-left {
             width: 50%;
             height: auto;
-            background: var(--accent-yellow);
+            background: url("../../assets/appointment.webp");
             border-radius: calc(var(--unit)/2);
         }
 
@@ -34,8 +30,14 @@
                 display: flex;
                 align-items: start;
                 gap: 10px;
+                display: flex;
+                align-items: center;
 
                 .core-icon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
                     svg {
                         font-size: 20px;
                         color: var(--accent-blue);
@@ -48,7 +50,6 @@
                     .left-p-span {
                         font-weight: bold;
                     }
-
                 }
 
                 .btn-div {
@@ -56,20 +57,22 @@
                 }
             }
         }
-
     }
 
     & .about-container2 {
         flex-direction: row-reverse;
     }
-
-
 }
 
 
 // second section
 .card-parent {
-    
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+        padding: 30px 20px;
+    }
 
     .card-container {
         height: 100%;
@@ -77,18 +80,18 @@
         justify-content: center;
         align-items: center;
         gap: var(--unit);
-        padding: calc(var(--unit)*3) 0px;
-       
-
+        padding: calc(var(--unit)*3) calc(var(--unit)/2);
 
         .card {
-            width: calc(var(--width) / 4);
+            width: calc(var(--width) / 5);
+
+            margin: auto !important;
             position: relative;
             height: auto;
             cursor: pointer;
             overflow: hidden;
             box-shadow: var(--shadow);
-            border-radius: calc(var(--unit));
+            border-radius: calc(var(--unit)/2);
 
             .front {
                 height: 100%;
@@ -105,7 +108,7 @@
 
                 .image {
                     width: 100%;
-                    aspect-ratio: 2;
+                    aspect-ratio: 3;
                     border-radius: calc(var(--unit) / 2);
                     display: flex;
                     justify-content: center;
@@ -134,9 +137,26 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
+
+                span {
+                    color: var(--accent-yellow);
+
+                    svg {
+                        font-size: calc(var(--unit)*2);
+
+                    }
+                }
 
                 p {
                     color: var(--white);
+                    font-size: calc(var(--unit) - 4px);
+                }
+
+                .timeing {
+                    font-size: calc(var(--unit) + 10px);
+                    color: var(--accent-yellow);
+                    font-weight: 700;
                 }
             }
 
@@ -147,6 +167,11 @@
             }
         }
     }
+
+    .swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        background-color: var(--accent-yellow);
+    }
 }
 
 // third section
@@ -155,7 +180,7 @@
 
     &.sectionbreak {
         background-color: #f4f4f4;
-        padding: calc(var(--unit)*3) 0px;
+        padding: calc(var(--unit)*3) 20px;
     }
 
     &.dr-parent2 {
@@ -171,21 +196,17 @@
         border-radius: calc(var(--unit)/2);
         border-radius: 10px 10px 10px 10px;
 
-
-
         .left-img {
             width: 50%;
             height: auto;
-            // background: url("../../assets/image/appointment.webp");
-            background: var(--accent-yellow);
+            background: url("../../assets/appointment.webp");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
             border-radius: 10px 0px 0px 10px;
 
             &.left-img-2 {
-                // background: url("../../assets/image/Second_Opinion.webp");
-                background: var(--accent-yellow);
+                background: url("../../assets/appointment.webp");
                 border-radius: 0px 10px 10px 0px;
                 background-position: center center;
                 background-repeat: no-repeat;
@@ -221,8 +242,97 @@
     & .bottom {
         flex-direction: row-reverse;
         border-radius: calc(var(--unit)/2);
-
-
     }
+}
 
+// first first
+
+@media (max-width:1000px) {
+    .about-parent {
+        .about-container {
+            flex-direction: column !important;
+
+            .about-left {
+                width: 100%;
+                aspect-ratio: 2;
+            }
+
+            .about-right {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media (max-width:550px) {
+    .about-parent {
+        .about-container {
+            padding: calc(var(--unit)*2) calc(var(--unit)) !important;
+
+            .about-left {
+                width: 100%;
+                aspect-ratio: 2;
+            }
+
+            .about-right {
+                align-items: center !important;
+                h2 {
+                    line-height: 25px !important;
+                    text-align: center;
+                }
+
+                p {
+                    width: 100%;
+                    text-align: center;
+
+                }
+
+                .button-about {
+                    display: flex;
+                    justify-content: center;
+
+                }
+            }
+
+        }
+
+        & .about-container2 {
+            padding: calc(var(--unit)) calc(var(--unit)) !important;
+
+        }
+    }
+}
+
+
+
+
+
+
+// third section
+
+@media (max-width:1000px) {
+    .dr-parent {
+
+        &.dr-parent2 {
+            padding: calc(var(--unit)*3) 20px;
+        }
+       
+        .dr-container {
+            flex-direction: column !important;
+            padding: calc(var(--unit)) calc(var(--unit)) !important;
+
+            .left-img {
+                width: 100%;
+                aspect-ratio: 2;
+                border-radius: 10px !important;
+            }
+
+            .left-text {
+                width: 100%;
+            }
+          
+        }
+      
+    }
 }
