@@ -26,15 +26,15 @@ function Contact() {
             </div>
 
             <div className="heading custom-heading">Dubai Office :</div>
-            <a href="tell:+1 408 693 6337​" className="contact-card-box">
+            <a href="tel:+14086936337​" className="contact-card-box">
               <span>
                 <IoCallOutline />
               </span>{" "}
               <div  className="contact-info">
-                <p>Phone no. : +1 408 693 6337​</p>
+                <p>+1 408 693 6337​</p>
               </div>
             </a>
-            <div className="contact-card-box">
+            <a href="https://maps.app.goo.gl/wUvDhkbhLCnKCk4TA" className="contact-card-box">
               <span>
                 <IoLocationOutline />
               </span>{" "}
@@ -44,8 +44,8 @@ function Contact() {
                 </div>
                 <p>505 Cento Ct, Pleasanton, CA 94566​</p>
               </div>
-            </div>
-            <div className="contact-card-box">
+            </a>
+            <a href="https://maps.app.goo.gl/CVWvUKyAZnHMcXpX6" className="contact-card-box">
               <span>
                 <IoLocationOutline />
               </span>{" "}
@@ -53,7 +53,7 @@ function Contact() {
                 <div className="heading custom-heading">Delaware Office : </div>
                 <p>3911 Concord Pike #8030,<br/> Wilmington, Delaware,19803</p>
               </div>
-            </div>
+            </a>
           </div>
 
           {/* card 2 */}
@@ -63,22 +63,22 @@ function Contact() {
               <div className="flag bg-img-cover uk"></div>
             </div>
             <div className="heading custom-heading">UK Office :</div>
-            <a href="tell:+1 408 693 6337" className="contact-card-box">
+            <a href="tel:+1 408 693 6337" className="contact-card-box">
               <span>
                 <IoCallOutline />
               </span>{" "}
               <div className="contact-info">
-                <p>Phone no. : +1 408 693 6337​</p>
+                <p>+1 408 693 6337​</p>
               </div>
             </a>
-            <div className="contact-card-box">
+            <a href="https://maps.app.goo.gl/haYyLsWvNbWU5eoE7" className="contact-card-box">
               <span>
                 <IoLocationOutline />
               </span>{" "}
               <div className="contact-info">
                 <p>20 Langland Drive, Pinner HA54SA​</p>
               </div>
-            </div>
+            </a>
           </div>
 
           {/* card 3 */}
@@ -88,26 +88,26 @@ function Contact() {
               <div className="flag bg-img-cover india"></div>
             </div>
             <div className="heading custom-heading">India Office :</div>
-            <a href="tell:+91 8298290078​" className="contact-card-box">
+            <a href="tel:+91 8298290078​" className="contact-card-box">
               <span>
                 <IoCallOutline />
               </span>{" "}
               <div className="contact-info">
-                <p>Phone no : +91 8298290078​</p>
+                <p>+91 8298290078​</p>
               </div>
             </a>
             <div className="contact-card-box">
               <span>
                 <IoLocationOutline />
               </span>{" "}
-              <div className="contact-info">
+              <a href="https://maps.app.goo.gl/aScSECScUZRB3GLL7" className="contact-info">
                 <div className="heading custom-heading">
                   Development Centre Pune :{" "}
                 </div>
                 <p>
                   403, 4th Floor, Kapil Zenith IT Park, <br/> Bavdhan,Pune 411021​
                 </p>
-              </div>
+              </a>
             </div>
           </div>
         </div>

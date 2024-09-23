@@ -43,12 +43,12 @@ const Footer = () => {
               </span>
               <p>info@axoncare.com</p>
             </a>
-            <div className="address-box">
+            <a href="https://maps.app.goo.gl/CVWvUKyAZnHMcXpX6" className="address-box">
               <span>
                 <MdOutlineLocationOn />
               </span>
               <p>3911 Concord Pike #8030, Wilmington, Delaware,19803</p>
-            </div>
+            </a>
           </div>
         </div>
         <div className="footer-bottom">
