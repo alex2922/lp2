@@ -62,7 +62,8 @@ function Herosection() {
                             </div>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide>
+                    <SwiperSlide               
+                   >
                         <div className="slide slide-img3 bg-img-cover">
                             <div className="overlay"></div>
                             <div className="slide-text-container container">
