@@ -2,7 +2,7 @@ import React from "react";
 import "./about.scss";
 import Button from "../button/Button";
 
-const About_sec = (props) => {
+const About_sec = () => {
   return (
     <>
       <div className="aboutsec-parent parent">
@@ -25,7 +25,7 @@ const About_sec = (props) => {
               overcome barriers of language and geography, receiving care in the
               way that suits you best.
             </p>
-            <Button text={props.btn_text} href={props.link} />
+            <Button text="Know More" href="/contact" />
           </div>
         </div>
       </div>

@@ -7,11 +7,12 @@ import Footer from "./comps/footer/Footer";
 import About_sec from "./comps/about/About_sec";
 import Header from "./comps/header/Header";
 
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      
+      <Header/>
         <About_sec />
         {/* <Footer /> */}
         <Routes>

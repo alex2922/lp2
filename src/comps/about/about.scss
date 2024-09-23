@@ -29,6 +29,9 @@
     }
     .about-right {
       width: 70%;
+      display:flex;
+      flex-direction: column;
+      gap:calc(var(--unit) /2);
       .desc {
         text-align: justify;
       }
