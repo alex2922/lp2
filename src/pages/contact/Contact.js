@@ -31,7 +31,7 @@ function Contact() {
                 <IoCallOutline />
               </span>{" "}
               <div  className="contact-info">
-                <p>Phone no. : +1 408 693 6337​</p>
+                <p>+1 408 693 6337​</p>
               </div>
             </a>
             <div className="contact-card-box">
@@ -68,7 +68,7 @@ function Contact() {
                 <IoCallOutline />
               </span>{" "}
               <div className="contact-info">
-                <p>Phone no. : +1 408 693 6337​</p>
+                <p>+1 408 693 6337​</p>
               </div>
             </a>
             <div className="contact-card-box">
@@ -93,7 +93,7 @@ function Contact() {
                 <IoCallOutline />
               </span>{" "}
               <div className="contact-info">
-                <p>Phone no : +91 8298290078​</p>
+                <p>+91 8298290078​</p>
               </div>
             </a>
             <div className="contact-card-box">
