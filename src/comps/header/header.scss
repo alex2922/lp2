@@ -1,12 +1,12 @@
 .header-parent {
-  height: 70px;
+  height: 60px;
   position: absolute;
   top: 20px;
   z-index: 100;
 
   .header-container {
     border-radius: 100px;
-    background: rgba(1, 7, 41, 0.658);
+    background: rgba(1, 7, 41, 0.295);
     border: 1px solid rgba(255, 255, 255, 0.161);
     display: flex;
     align-items: Center;
@@ -22,6 +22,9 @@
       cursor: pointer;
       padding-right:10px;
       transition: var(--trans);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       svg {
         font-size: 25px;
       }
@@ -99,6 +102,15 @@
           }
         }
       }
+
+      .clickarea{
+height: 100%;
+width: 100%;
+// background: rosybrown;
+      }
+
+
+
     }
     .mobile-number {
       display: flex;
@@ -155,7 +167,7 @@
     .header-container {
       .mobile-header {
         .menu-links {
-          width: 350px;
+          width: 100%;
         }
       }
     }
