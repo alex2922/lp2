@@ -80,6 +80,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .VideoSec{
+padding: calc(var(--unit)/2);
+  }
+
   .VideoSec-container {
     gap: calc(var(--unit)) !important;
     padding: calc(var(--unit) / 2) !important ;
