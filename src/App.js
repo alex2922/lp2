@@ -13,18 +13,18 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [toggle, setToggle] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setToggle(true)
-    }, 2000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setToggle(true)
+  //   }, 2000);
+  // }, []);
   return (
     <div className="App">
       <BrowserRouter>
-      {/* <Header/> */}
+      <Header/>
         {/* <Footer /> */}
        
-      <Header/>
+      {/* <Header/> */}
       {toggle && <PopUp close={()=>setToggle(false)}/>}
         <Routes>
           <Route path="/" element={<Home />} />

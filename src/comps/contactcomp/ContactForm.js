@@ -58,7 +58,7 @@ const ContactForm = ({ heading, description, reusing }) => {
         }}
       >
         <h2 className="heading contact-form-heading">{heading}</h2>
-        <p>{description}</p>
+        <p className="contact-form-description">{description}</p>
         <form class="contact-form" onSubmit={handleSubmit}>
           <div class="form-group">
             <input
