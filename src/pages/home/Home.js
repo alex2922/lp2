@@ -13,7 +13,7 @@ import admin from "../../assets/icons/phys.gif";
 import boost from "../../assets/icons/rocket.gif";
 import global from "../../assets/icons/world.gif";
 
-import Herosection from "../../comps/hero/Herosection";
+// import Herosection from "../../comps/hero/Herosection";
 import About_sec from "../../comps/about/About_sec";
 function Home() {
   const cardData = [
