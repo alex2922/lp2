@@ -90,9 +90,20 @@
           ul {
             a {
               display: flex;
-              align-items: flex-start;
+              align-items: center;
               justify-content: flex-start;
               transition: var(--trans);
+              // justify-content: center;
+              .arrow{
+                display: flex;
+                align-items: center;
+                margin-left: 5px;
+                justify-content: center;
+                transition: var(--trans);
+                &.active{
+                  transform: rotate(180deg);
+                }
+              }
             }
             .menudropdown {
               display: flex;
