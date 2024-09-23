@@ -41,7 +41,7 @@ style={{borderRadius:"20px"}}
 </div>
 
           </div>
-          <div className="right" data-aos="fade-down" >
+          <div className="right" data-aos="fade-up" >
             <div className="top-sec">
               <h2 className="heading ">
                 <span>{props.highlight}</span>
