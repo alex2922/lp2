@@ -1,16 +1,21 @@
 import React, { useEffect } from "react";
-import "./Contact.scss";
+import "./contact.scss";
 import ContactForm from "../../comps/contactcomp/ContactForm";
 import { MdOutlineMail } from "react-icons/md";
 import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import Pagetop from "../../comps/pagetop/Pagetop";
 function Contact() {
   useEffect(function () {
     Aos.init({ duration: 1000 });
   }, []);
   return (
+
+    <>
+     <Pagetop text="Contact"/>
     <div className="contact-parent parent">
+     
       <div className="contact-container container">
         <div className="contact-left contact-body" data-aos-delay="300" data-aos="fade-up">
           {/* card 1 */}
@@ -130,6 +135,7 @@ function Contact() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
