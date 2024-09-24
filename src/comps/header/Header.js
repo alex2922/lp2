@@ -108,7 +108,7 @@ const Header = () => {
                     data-aos="fade-down"
                     data-aos-delay="800"
                   >
-                    Contact Us
+                    Contact
                   </Link>
                 </div>
 
