@@ -43,7 +43,7 @@ function Herosection() {
                         <div className="slide slide-img1 bg-img-cover">
                             <div className="overlay"></div>
                             <div className="slide-text-container container">
-                                <h1 className='slide-heading'>AI and Tech Revolutionising healthcare Delivery</h1>
+                                <h1 className='slide-heading'>AI and Tech Revolutionising Healthcare Delivery</h1>
 
                                 <Button text="Know More"
                                     href="https://axonichealth.com/"

@@ -51,7 +51,7 @@ function Contact() {
               </span>{" "}
               <div className="contact-info">
                 <div className="heading custom-heading2">Delaware Office : </div>
-                <p>3911 Concord Pike #8030,<br/> Wilmington, Delaware,19803</p>
+                <p>3911 Concord Pike #8030,<br/> Wilmington, Delaware, 19803</p>
               </div>
             </a>
           </div>
@@ -76,7 +76,7 @@ function Contact() {
                 <IoLocationOutline />
               </span>{" "}
               <div className="contact-info">
-                <p>20 Langland Drive, Pinner HA54SA​</p>
+                <p>20 Langland Drive, Pinner HA5 4SA​</p>
               </div>
             </a>
           </div>
@@ -121,13 +121,13 @@ function Contact() {
 
           {/*  */}
           <div className="contact-card">
-            <a href="mailto:info@axoncare.com" className="contact-card-box">
+            <a href="mailto:info@axonichealth.com" className="contact-card-box">
               <span>
                 <MdOutlineMail />
               </span>{" "}
               <div className="contact-info">
               <div className="heading custom-heading">Email :</div>
-                <p>info@axoncare.com</p>
+                <p>info@axonichealth.com</p>
               </div>
             </a>
           </div>

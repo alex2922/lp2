@@ -41,7 +41,7 @@ const flipCardData = [
   },
   {
     heading: "Corporate Enterprises",
-    desc: "Ensure the health and productivity of your employees with AxonCare. We provide an Anytime Health kiosk at your workplace, offering 24/7 specialist consultations, daily health monitoring through point-of-care testing, and mental health support—reducing absenteeism and empowering your workforce.",
+    desc: "Ensure the health and productivity of your employees with AxonCare. We provide an `Anytime Health` kiosk at your workplace, offering 24/7 specialist consultations, daily health monitoring through point-of-care testing, and mental health support—reducing absenteeism and empowering your workforce.",
     btn: "Enquire Now",
     btn_link: "/contact",
     img: img2,
