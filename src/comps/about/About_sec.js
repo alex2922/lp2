@@ -43,7 +43,7 @@ const About_sec = () => {
               data-aos-delay="600"
               data-aos-anchor="#example-anchor"
             >
-              <Button text="Know More" href="/contact" />
+              <Button text="Know More" href="/about" />
             </div>
 
           </div>

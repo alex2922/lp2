@@ -42,7 +42,7 @@ function About() {
     },
     {
       image: lifeIcon,
-      name: "Gynecologist",
+      name: "Gynaecologist",
       designation: "OPD Timings",
       icon: <MdAccessTime />,
     },
@@ -71,7 +71,7 @@ function About() {
             <p>
               AxonCare, a service brand by Axonic, is a global healthcare
               network connecting doctors and patients worldwide through
-              cutting-edge technology solutions. We are revolutionizing
+              cutting-edge technology solutions. We are revolutionising
               healthcare delivery by creating a seamless, connected system,
               allowing you to access healthcare when and where you need it,
               without delay. With our network of specialists, the "Anytime
@@ -92,7 +92,7 @@ function About() {
             data-aos-delay="300"
           ></div>
           <div className="about-right" data-aos="fade-up" data-aos-delay="300">
-            <h2>AxonCare : Multispeciality Smart Clinic</h2>
+            <h2>AxonCare: Multispeciality Smart Clinic</h2>
             <p>
               Imagine healthcare like never before, with world-class facilities
               at your fingertips. No more running between specialists and
