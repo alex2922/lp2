@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import footerimg from "../../assets/logo/logow.png";
 import { MdMailOutline } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { FaArrowUp } from "react-icons/fa6";
 const Footer = () => {
   return (
     <>
@@ -57,8 +58,13 @@ const Footer = () => {
         </div>
       </div>
     </div>
-    <div className="gototop">
-      
+    <div className="gototop"  onClick={()=>window.scrollTo({
+      top:0,
+      behavior:"smooth"
+    })} >
+    <span>
+    <FaArrowUp />
+    </span>
     </div>
     </>
   );
