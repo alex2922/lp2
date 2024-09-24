@@ -1,0 +1,21 @@
+.error-parent {
+  width: 100%;
+  height: 100svh;
+  background-color: var(--grey);
+
+  .error-cont {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: calc(var(--unit)/2);
+  
+    
+    .errortext{
+        font-size: 120px;
+        line-height: 100%;
+        text-shadow: 0px 6px 8px var(--accent-yellow);
+    }
+  }
+}
