@@ -87,16 +87,16 @@ const Header = () => {
                           Labs and Pharmacies
                         </a>
                         <a href="/#partners" onClick={() => setNav(false)}>
-                          Corporates
+                          Corporate Enterprises
                         </a>
                         <a href="/#partners" onClick={() => setNav(false)}>
-                          Elderly Care
+                          Elderly Care Facilities
                         </a>
                         <a href="/#partners" onClick={() => setNav(false)}>
-                          Societies
+                        Residential Societies
                         </a>
                         <a href="/#partners" onClick={() => setNav(false)}>
-                          Schools
+                        School Health
                         </a>
                       </div>
                     )}

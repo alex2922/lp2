@@ -262,7 +262,7 @@ function About() {
                 <p>
                   {" "}
                   Need a second opinion? Upload your medical records to the
-                  AxonCare app and receive a personalized evaluation from a
+                  AxonCare app and receive a personalised evaluation from a
                   qualified expert.
                 </p>
               </div>
