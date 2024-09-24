@@ -11,6 +11,7 @@ import PopUp from "./comps/model/PopUp";
 import { useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
 import PageToTop from "./comps/pagetotop/PageToTop";
+import Error from "./pages/error/Error";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/test" element={<Pagetop />} />
+          <Route path="*" element={<Error />} />
 
         </Routes>
         <Footer />
