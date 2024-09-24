@@ -10,6 +10,7 @@ import Pagetop from "./comps/pagetop/Pagetop";
 import PopUp from "./comps/model/PopUp";
 import { useEffect, useState } from "react";
 import { Toaster } from "react-hot-toast";
+import PageToTop from "./comps/pagetotop/PageToTop";
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Toaster position="top-center" reverseOrder={false} />
       {/* <Header/> */}
       {toggle && <PopUp close={()=>setToggle(false)}/>}
+    <PageToTop/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

@@ -6,6 +6,7 @@ import { MdMailOutline } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
 const Footer = () => {
   return (
+    <>
     <div className="footer-parent parent bg-img-cover">
       <div className="footer-container container">
         <div className="footer-top">
@@ -56,6 +57,10 @@ const Footer = () => {
         </div>
       </div>
     </div>
+    <div className="gototop">
+      
+    </div>
+    </>
   );
 };
 
