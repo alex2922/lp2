@@ -15,7 +15,7 @@ const Footer = () => {
             <Link to="/" className="footer-logo-box">
               <img src={footerimg} alt="" className="footer-logo" />
             </Link>
-            <h2 className="heading">About Us</h2>
+            <h2 className="heading">About </h2>
             <p>
               AxonCare, a service brand by Axonic, is a global healthcare
               network that connects doctors and patients worldwide through
@@ -27,7 +27,7 @@ const Footer = () => {
             <div className="links-box">
               <Link to="/" className="link">Home</Link>
               <Link to="/about" className="link">About</Link>
-              <Link to="/contactUS" className="link">Contact Us</Link>
+              <Link to="/contact" className="link">Contact </Link>
             </div>
           </div>
           <div className="legals-box-container footer-box">
@@ -39,17 +39,17 @@ const Footer = () => {
           </div>
           <div className="address-box-container footer-box">
             <h2 className="heading">Address</h2>
-            <a href="mailto:info@axoncare.com" className="address-box" >
+            <a href="mailto:info@axonichealth.com" className="address-box" >
               <span>
                 <MdMailOutline />
               </span>
-              <p>info@axoncare.com</p>
+              <p>info@axonichealth.com</p>
             </a>
             <a href="https://maps.app.goo.gl/CVWvUKyAZnHMcXpX6" className="address-box" target="__blank">
               <span>
                 <MdOutlineLocationOn />
               </span>
-              <p>3911 Concord Pike #8030, Wilmington, Delaware,19803</p>
+              <p>3911 Concord Pike #8030, Wilmington, Delaware, 19803</p>
             </a>
           </div>
         </div>
