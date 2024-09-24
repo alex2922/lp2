@@ -16,7 +16,28 @@
   }
   
 
-  .pagetop-container {
+  video {
+    width: 100vw !important;
+    height: auto;
+  }
+}
+
+
+.pagetop-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  height: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  .rotor-box {
+    z-index: 80;
+    margin-top: 20px;
+    width: fit-content;
+    height: 50px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,27 +77,26 @@
       animation: rotate 4s linear infinite;
     }
 
-    .rotor h3 {
-      background: var(--accent-yellow);
-      width: 100%;
-      padding: 15px 30px;
-      height: 42px;
-      box-sizing: border-box;
-      white-space: nowrap;
-      color: white;
-      display: flex;
-      font-weight: 600;
-      align-items: center;
-      justify-content: center;
-    }
+  .rotor h3 {
+    background: var(--accent-yellow);
+    width: 100%;
+    padding: 15px 30px;
+    height: 42px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    color: white;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+  }
 
-    @keyframes rotate {
-      from {
-        transform: translate(-50%, -50%) rotate(0deg);
-      }
-      to {
-        transform: translate(-50%, -50%) rotate(360deg);
-      }
+  @keyframes rotate {
+    from {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+      transform: translate(-50%, -50%) rotate(360deg);
     }
   }
 }
@@ -90,4 +110,5 @@
             height: 200px !important;
         }
     }
+}
 }
