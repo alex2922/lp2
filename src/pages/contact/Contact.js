@@ -21,11 +21,11 @@ function Contact() {
           {/* card 1 */}
           <div className="contact-card" >
             <div className="flag-box">
-              <div className="flag-content">Dubai</div>
+              <div className="flag-content">USA</div>
               <div className="flag bg-img-cover dubai"></div>
             </div>
 
-            <div className="heading custom-heading">Dubai Office :</div>
+            <div className="heading custom-heading">USA Office :</div>
             <a href="tel:+14086936337​" className="contact-card-box">
               <span>
                 <IoCallOutline />
