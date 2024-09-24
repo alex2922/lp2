@@ -63,12 +63,12 @@ function Contact() {
               <div className="flag bg-img-cover uk"></div>
             </div>
             <div className="heading custom-heading">UK Office :</div>
-            <a href="tel:+1 408 693 6337" className="contact-card-box">
+            <a href="tel:+442034113999" className="contact-card-box">
               <span>
                 <IoCallOutline />
               </span>{" "}
               <div className="contact-info">
-                <p>+1 408 693 6337​</p>
+                <p>+44203411 3999​</p>
               </div>
             </a>
             <a href="https://maps.app.goo.gl/haYyLsWvNbWU5eoE7" className="contact-card-box" target="__blank">
