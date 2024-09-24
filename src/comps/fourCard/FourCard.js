@@ -24,7 +24,7 @@ const FourCard = (props) => {
           <span className="section-indicator">
             {props.heading}
           </span>
-          <h2>What we offer</h2>
+          <h2>What We Offer</h2>
         </div>
 
         <div className="card-section-container container" data-aos="fade-up" >
