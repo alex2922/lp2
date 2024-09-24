@@ -158,8 +158,7 @@ function Partners() {
         modules={[Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>  <div className="pleft">
-              <div className="partner-c1">
+       <SwiperSlide><div className="partner-c1">
                 <Flipcard
                   heading={flipCardData[0].heading}
                   desc={flipCardData[0].desc}
@@ -168,8 +167,8 @@ function Partners() {
                   img={flipCardData[0].img}
 
                 />
-              </div>
-              <div className="partner-c2">
+              </div></SwiperSlide>
+        <SwiperSlide> <div className="partner-c2">
                 <Flipcard
                   heading={flipCardData[1].heading}
                   desc={flipCardData[1].desc}
@@ -178,10 +177,8 @@ function Partners() {
                   img={flipCardData[1].img}
 
                 />
-              </div>
-            </div></SwiperSlide>
-        <SwiperSlide><div className="pmiddle">
-              <div className="partner-c3">
+              </div></SwiperSlide>
+        <SwiperSlide> <div className="partner-c3">
                 <Flipcard
                   heading={flipCardData[2].heading}
                   desc={flipCardData[2].desc}
@@ -190,10 +187,8 @@ function Partners() {
                   img={flipCardData[2].img}
 
                 />
-              </div>
-            </div></SwiperSlide>
-        <SwiperSlide> <div className="pright">
-              <div className="partner-c4">
+              </div></SwiperSlide>
+        <SwiperSlide> <div className="partner-c4">
                 <Flipcard
                   heading={flipCardData[3].heading}
                   desc={flipCardData[3].desc}
@@ -202,8 +197,8 @@ function Partners() {
                   img={flipCardData[3].img}
 
                 />
-              </div>
-              <div className="partner-c5">
+              </div></SwiperSlide>
+        <SwiperSlide> <div className="partner-c5">
                 <Flipcard
                   heading={flipCardData[4].heading}
                   desc={flipCardData[4].desc}
@@ -212,9 +207,8 @@ function Partners() {
                   img={flipCardData[4].img}
 
                 />
-              </div>
-            </div></SwiperSlide>
-
+              </div></SwiperSlide>
+        
       </Swiper>
 
 
