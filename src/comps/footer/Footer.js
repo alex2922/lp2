@@ -5,6 +5,7 @@ import footerimg from "../../assets/logo/logow.png";
 import { MdMailOutline } from "react-icons/md";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { FaArrowUp } from "react-icons/fa6";
+
 const Footer = () => {
   return (
     <>

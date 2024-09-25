@@ -200,13 +200,13 @@ body {
 }
 
 .section-indicator {
-  color: var(--accent-yellow);
+  color: var(--accent-blue);
   position: relative;
 
   &::after {
     content: "";
     height: 1px;
-    background-color: var(--accent-yellow);
+    background-color: var(--accent-blue);
     position: absolute;
     top: 50%;
     right: 105%;
@@ -216,7 +216,7 @@ body {
   &::before {
     content: "";
     height: 1px;
-    background-color: var(--accent-yellow);
+    background-color: var(--accent-blue);
     position: absolute;
     top: 50%;
     left: 105%;
