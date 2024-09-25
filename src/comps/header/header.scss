@@ -44,7 +44,7 @@
       background: rgba(0, 0, 0, 0.7);
       transition: var(--trans);
       .close {
-        color: white;
+        color: var(--accent-blue);
         position: absolute;
         top: 10px;
         z-index: 210;
@@ -66,7 +66,7 @@
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        background: var(--accent-blue);
+        background: linear-gradient(-45deg, var(--accent-yellow), var(--accent-yellow2));
         padding: var(--unit);
         padding-top: calc(var(--unit) * 2);
         transition: var(--trans);
@@ -80,11 +80,11 @@
           padding-top: 50px;
           gap: var(--unit);
           a {
-            color: white;
+            color: var(--accent-blue);
             transition: var(--trans);
 
             &:hover {
-              color: var(--accent-yellow);
+              color: var(--white);
             }
           }
           ul {
@@ -93,6 +93,7 @@
               align-items: center;
               justify-content: flex-start;
               transition: var(--trans);
+             
               // justify-content: center;
               .arrow{
                 display: flex;
@@ -115,9 +116,16 @@
               border-radius: calc(var(--unit) / 2);
               width: 300px;
               transition: var(--trans);
-              background: hsla(0, 0%, 100%, .107);
+              // background: hsla(0, 0%, 100%, .107);
+              background: white;
               padding: 15px 10px;
               border-radius: 5px;
+              a{
+                color:var(--accent-blue);
+                &:hover{
+                  color:var(--accent-yellow);
+                }
+              }
             }
           }
         }
@@ -145,7 +153,7 @@
           border: 1px solid rgba(255, 255, 255, 0.174);
           gap: calc(var(--unit) / 2);
           width: 100%;
-          color: var(--white);
+          color: var(--accent-blue);
           transition: var(--trans);
           cursor: pointer;
 
@@ -153,7 +161,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--accent-yellow);
+            color: var(--white);
             transition: var(--trans);
           }
 
@@ -164,11 +172,11 @@
           }
 
           &:hover {
-            background: var(--accent-yellow);
+            background: var(--accent-blue);
 
             .icon,
             p {
-              color: var(--accent-blue);
+              color: var(--white);
             }
           }
         }
