@@ -66,7 +66,8 @@
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        background: linear-gradient(-45deg, var(--accent-yellow), var(--accent-yellow2));
+        background: radial-gradient(circle, #f9d423, rgb(255, 153, 0));
+      
         padding: var(--unit);
         padding-top: calc(var(--unit) * 2);
         transition: var(--trans);
@@ -150,19 +151,23 @@
           display: flex;
           align-items: center;
           padding: 10px;
-          border: 1px solid rgba(255, 255, 255, 0.174);
+          // border: 1px solid rgba(255, 255, 255, 0.174);
+          // border: var(--accent-blue) 1px solid;
           gap: calc(var(--unit) / 2);
           width: 100%;
           color: var(--accent-blue);
           transition: var(--trans);
           cursor: pointer;
+          background: var(--white);
 
           .icon {
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--white);
+            color: var(--accent-blue);
             transition: var(--trans);
+            aspect-ratio: 1;
+
           }
 
           p {
